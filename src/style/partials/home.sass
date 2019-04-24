@@ -1,0 +1,499 @@
+// Home intro
+
+.home_intro
+  padding: 60px 0 0 0
+  &__title
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: 0.7px
+      margin-bottom: 50px
+  &__word
+    background-image: linear-gradient(45deg, #537c44 0%, #b0c849 100%)
+    padding: 20px 0
+    margin-bottom: 50px
+    .title
+      color: white
+      font-size: 150px
+      font-weight: 600
+      line-height: 1
+      text-transform: uppercase
+  &__form
+    width: 100%
+    max-width: 100%
+    margin-bottom: 50px
+    p
+      font-size: 12px
+      font-weight: 300
+    form
+      display: flex
+      justify-content: center
+      margin-bottom: 10px
+      input[type="email"]
+        text-transform: uppercase
+        color: $color_black
+        font-size: 12px
+        font-weight: 500
+        width: 275px
+        max-width: 100%
+        height: 46px
+        border: 0
+        border-radius: 3px
+        background-color: #e2e2e2
+        padding-left: 20px
+        margin: 0 5px
+        outline: 0
+        &::placeholder
+          color: $color_black
+      input[type='submit']
+        text-transform: uppercase
+        color: white
+        font-size: 16px
+        font-weight: 500
+        letter-spacing: 1.4px
+        width: 235px
+        max-width: 100%
+        height: 46px
+        border: 1px solid $color_black
+        background-color: $color_black
+        background-image: none
+        margin: 0 5px
+        outline: 0
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
+
+  &__info
+    .title_secondary
+      margin-bottom: 30px
+    p
+      margin-bottom: 70px
+
+.home_info
+  &__title
+    margin-bottom: 30px
+
+// Home call
+
+.home_call
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: contain
+  padding: 0 0 300px 0
+  &__wrapper
+    justify-content: space-between
+    padding-top: 50px
+
+.signature
+  p
+    margin-bottom: 100px
+  &__item
+    span
+      color: $color_black
+      font-size: 30px
+      letter-spacing: 2.93px
+    p
+      font-size: 12px
+      font-weight: 300
+      margin-bottom: 0
+
+.call_item
+  box-shadow: 0 9px 41px -2px rgba(0,0,0,0.23)
+  border-radius: 10px
+  padding: 20px
+  margin-bottom: 30px
+  &__info
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    span
+      width: 40px
+      height: 40px
+      box-shadow: 0 0 41px -2px rgba(0,0,0,0.23)
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 10px
+      img
+        height: 40px
+    p
+      width: 70%
+      max-width: 100%
+      font-size: 12px
+      font-weight: 300
+      margin-bottom: 0
+  &__form
+    p
+      font-size: 12px
+      font-weight: 300
+    ul
+      display: flex
+      justify-content: center
+      li
+        a
+          color: #383838
+          padding: 0 5px
+          font-size: 10px
+          font-weight: 500
+    form
+      width: 100%
+      input[type="number"]
+        width: 100%
+        height: 35px
+        border: 1px solid #b4cc48
+        border-radius: 20px
+        padding-left: 20px
+        font-size: 12px
+        font-weight: 300
+        outline: 0
+        margin-bottom: 20px
+      input[type="submit"]
+        width: 100%
+        height: 35px
+        background-image: linear-gradient(45deg, #537c44 0%, #b0c849 100%)
+        border-radius: 20px
+        font-size: 14px
+        font-weight: 500
+        text-transform: uppercase
+        color: white
+        outline: 0
+        margin-bottom: 20px
+
+.call__btns
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 75%
+    height: 46px
+    background-color: #383838
+    font-size: 12px
+    font-weight: 300
+    color: white
+    border-radius: 5px
+    &:nth-child(2)
+      background-color: inherit
+      width: 46px
+
+// Home logo
+
+.home_logo
+  padding: 70px 0
+  background-image: linear-gradient(to top, #ffffff 0%, #eeeeee 99.8578%, #eeeeee 100%)
+  &__white
+    background-color: white
+    background-image: none
+  &__text
+    margin-bottom: 50px
+  &_list
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    img
+      transition: 0.3s
+      filter: grayscale(100%)
+      &:hover
+        transition: 0.3s
+        filter: grayscale(0)
+
+.home_logo_list
+  &__item
+    width: 17%
+    text-align: center
+
+// Home text
+
+.home_text
+  padding: 70px 0
+  &__title
+    margin-bottom: 30px
+  &__item
+    margin: 0 auto 50px auto
+
+// Home way
+
+.home_way
+  padding: 70px 0
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    height: 100%
+    width: 50%
+    background-color: #f4f4f4
+  &__wrapper
+    flex-wrap: wrap
+    justify-content: center
+  &_item
+    &:nth-child(2)
+      .home_way_item__bg
+        span
+          border: 1px solid #000
+    &__title
+      margin-bottom: 5px
+      .title
+        font-size: 30px
+        font-weight: 600
+        text-transform: uppercase
+    &__text
+      margin-bottom: 5px
+      p
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: 300
+        margin-bottom: 0
+        color: #b8b8b8
+    &__bg
+      margin-bottom: 25px
+      span
+        background-color: white
+        border: 1px solid white
+        font-size: 12px
+        font-weight: 400
+        color: #000
+        padding: 5px 50px
+        text-transform: uppercase
+        letter-spacing: 1.5px
+    &__table
+      margin-bottom: 20px
+      img
+        width: 20px
+        margin-bottom: 10px
+      .title
+        color: #000
+        font-size: 16px
+        font-weight: 400
+        letter-spacing: 1.5px
+        margin-bottom: 10px
+      ul
+        width: 48%
+        max-width: 100%
+        margin: 0 auto
+        li
+          border-bottom: 0
+          color: $color_black
+          font-size: 20px
+          font-weight: 600
+          text-transform: uppercase
+          padding: 2px 0
+          p
+            font-size: 12px
+            font-weight: 100
+            text-transform: none
+            line-height: 1
+            color: #b8b8b8
+          &:nth-child(3)
+            font-size: 18px
+          &:nth-child(4)
+            font-size: 14px
+          &:last-child
+            color: white
+            font-size: 20px
+            text-transform: none
+            padding: 13px
+            position: relative
+            z-index: 1
+            border-left: 0
+            border-right: 0
+            p
+              color: white
+            &:before
+              position: absolute
+              content: ''
+              left: -1px
+              top: 0
+              width: 101%
+              height: 100%
+              background-image: url("../img/bg_triangle.svg")
+              background-size: cover
+              background-repeat: no-repeat
+              background-position: center
+              z-index: -1
+    &__customer
+      margin-bottom: 20px
+      .title
+        color: #b8b8b8
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        margin-bottom: 5px
+        letter-spacing: 1.5px
+    &__icon
+      margin-bottom: 20px
+      img
+        width: 10%
+    &__days
+      img
+        margin-right: 15px
+        width: 6%
+      .title
+        font-size: 22px
+        font-weight: 600
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        &:before
+          position: absolute
+          content: ''
+          bottom: -10px
+          width: 20%
+          height: 3px
+          background-color: #ff0524
+    .days_green
+      .title
+        &:before
+          background-color: #13c36e
+
+// Home tabs
+
+.home_tabs
+  padding: 70px 0
+  &__title
+    margin-bottom: 30px
+  &__text
+    margin-bottom: 50px
+  nav
+    .nav-tabs
+      display: flex
+      justify-content: center
+      border-bottom: 0
+      margin-bottom: 50px
+      .nav-item
+        text-transform: uppercase
+        color: #a0a0a0
+        font-size: 16px
+        font-weight: 600
+        border: 0
+      .active
+        border: 0
+        color: black
+  .tab-content
+    .swiper-slide
+      text-align: center
+      padding-bottom: 35px
+      img
+        box-shadow: 0 10px 68px -15px rgba(0,0,0,0.24)
+    .swiper-button-next, .swiper-button-prev
+      background-image: none
+    .swiper-button-next
+      right: 0
+    .swiper-button-prev
+      left: 0
+
+// How it works
+
+.home_how
+  background-color: #f4f4f4
+  padding: 70px 0
+  &__title
+    margin-bottom: 50px
+  nav
+    .nav
+      border-bottom: 0
+      .nav-item
+        padding: 15px 20px
+        color: #000000
+        font-size: 16px
+        font-weight: 600
+        border: 0
+        p
+          margin-top: 10px
+          font-size: 14px
+      .active
+        border: 0
+        background-color: white
+
+// Home testimonial
+
+.home_testimonial
+  padding: 70px 0
+  background-color: #f4f4f4
+  &__title
+    margin-bottom: 50px
+  &__item
+    background-color: white
+    p
+      padding: 40px 70px
+      text-align: center
+      font-style: italic
+      letter-spacing: 0.3px
+      margin-bottom: 30px
+      position: relative
+      &:before
+        position: absolute
+        content: '"'
+        left: 40px
+        top: 20px
+        color: $color_black
+        font-size: 40px
+        font-weight: bold
+      &:after
+        position: absolute
+        content: '"'
+        right: 40px
+        bottom: 20px
+        color: $color_black
+        font-size: 40px
+        font-weight: bold
+
+.testimonial_item
+  padding-bottom: 50px
+  &__info
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      margin-right: 30px
+      border: 1px solid #eee
+      border-radius: 50%
+
+.testimonial_info
+  &__text
+    .title
+      color: #283238
+      font-size: 30px
+      letter-spacing: 2.93px
+      margin-bottom: 15px
+    p
+      padding: 0
+      margin: 0
+      color: black
+      font-size: 12px
+      font-weight: 300
+      font-style: italic
+      display: flex
+      align-items: center
+      &:before, &:after
+        display: none
+      img
+        margin: 0 0 0 10px
+        width: 25%
+        padding-left: 10px
+        border: 0
+        border-radius: 0
+        border-left: 1px solid $color_black
+
+// Home trial
+
+.home_trial
+  background-color: white
+  padding: 70px 0
+  &__title
+    margin-bottom: 50px
+  &__text
+    margin-bottom: 30px
+    p
+      margin-bottom: 0
+    .title
+      font-size: 24px
+      font-weight: 600
+

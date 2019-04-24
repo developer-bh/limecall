@@ -1,0 +1,95 @@
+// Integration
+
+.integration
+  padding: 60px 0
+  &__text
+    margin-bottom: 100px
+    .title
+      color: #283238
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: .7px
+      margin-bottom: 30px
+  &__list
+    justify-content: space-between
+    margin-bottom: 50px
+
+
+.integration_item
+  width: 14%
+  max-width: 100%
+  text-align: center
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 100px
+  &.active
+    background-color: #f4f4f4
+  &__icon
+    margin: 0 10px 0 0
+    img
+      width: 35px
+      height: auto
+  p
+    width: 55%
+    color: #b7b7b7
+    font-size: 12px
+    font-weight: 500
+    line-height: 20px
+    text-transform: uppercase
+    text-align: left
+    margin-bottom: 0
+
+.integration_info
+  &__border
+    border: 1px solid #f4f4f4
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+    cursor: pointer
+  //&__flag
+  //  position: absolute
+  //  right: 0
+  //  top: 0
+  //  background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
+  //  padding: 0 25px
+  //  &:before
+  //    position: absolute
+  //    content: ''
+  //    left: 0
+  //    width: 0
+  //    height: 0
+  //    border-top: 14px solid transparent
+  //    border-left: 10px solid white
+  //    border-bottom: 13px solid transparent
+  //  p
+  //    color: white
+  //    margin: 0
+  //    font-weight: 500
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: center
+    padding: 15px
+    width: 100%
+    height: 100%
+    transition: 0.3s
+    margin-bottom: 30px
+  a
+    text-align: center
+    background-color: #f4f4f4
+    padding: 15px
+    color: $color_black
+    font-size: 16px
+    font-weight: 600
+    transition: .3s
+    &:hover
+      transition: 0.3s
+      color: white
+      text-decoration: none
+      background-color: #283238
+
+

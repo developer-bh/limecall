@@ -1,0 +1,245 @@
+$r-768: 768px
+$r-992: 992px
+$r-1024: 1024px
+$r-1200: 1200px
+
+body
+  // break max-768
+  @media only screen and (max-width: $r-768)
+    // Home
+
+    .home_intro
+      &__title
+        .title
+          font-size: 36px
+      &__word
+       .title
+          font-size: 100px
+    .title__secondary
+      font-size: 30px
+    .signature p
+      margin-bottom: 30px
+    .home_call
+      padding-bottom: 200px
+    .home_way
+      &:before
+        display: none
+    .home_way_item
+      padding: 25px 0 50px 0
+      border-right: 0
+      border-bottom: 2px solid #283238
+      &:nth-child(2)
+        border-bottom: 0
+      &__table
+        ul
+          width: 50%
+    .home_how
+      .tab-content
+        order: 2
+      .nav-tabs
+        margin-bottom: 30px
+    .home_testimonial
+      &__item
+        p
+          padding: 40px 15px
+          &:before
+            left: 0
+            top: 10px
+    .home_intro
+      &__form
+        form
+          flex-direction: column
+          align-items: center
+          input
+            width: 80% !important
+            margin-bottom: 10px!important
+
+    // Features
+
+    .features_header
+      &__title
+       .title
+          font-size: 36px
+    .features_wrap
+      &__text
+        order: 1
+        margin-bottom: 30px
+      &__img
+        order: 2
+        text-align: center
+    .features_header_top_list
+      &__item
+        width: 70%
+
+    // Blog
+
+    .blog_list
+      .nav
+        .nav-item
+          margin: 0 5px
+          .nav-link
+            padding: 5px 0
+
+    // Cases
+
+    .cases_header
+      .title, p
+        width: 100%
+    .cases_about
+      &__wrapper
+        .title__secondary
+          margin-top: 30px
+    .cases_list
+      &__item
+        width: 70%
+
+    // About
+
+    .about_header
+      &__title
+        .title
+          font-size: 36px
+    .team_values_list
+      &:nth-child(odd)
+        .team_values_list__item
+          &:first-child
+            order: 1
+          &:nth-child(2)
+            order: 2
+
+    // Contacts
+
+    .contacts
+      &__height
+        padding: 30px 0
+      &__form
+        padding: 30px 15px!important
+
+    // Integrations
+
+    .integration
+      &__text
+        .title
+          font-size: 36px
+        img
+          width: 100%
+    .integration_item
+      width: 47%
+
+  // break max-1024
+  @media only screen and (max-width: $r-992)
+    .header_wrap
+      position: relative
+      z-index: 2
+      border-bottom: 1px solid rgba(255, 255, 255, 0.39)
+      padding-bottom: 15px
+      &__nav
+        ul
+          .highlight
+            a
+              color: white
+      &__left
+        &.white
+          a
+            &:first-child
+              display: none
+            &:nth-child(2)
+              display: block
+      &__icon
+        &.white
+          a
+            i
+              color: white
+            &:first-child
+              display: none
+            &:nth-child(2)
+              display: block
+    .header_white
+      .header_mobile
+        ul
+          li
+            a
+              color: white
+          .menu-item-has-children
+            .sub-menu
+              width: 100%
+              a
+                color: white
+    .header_mobile
+      padding-top: 120px
+      .header_nav
+        display: block
+    .header_wrap
+      &__nav
+        display: none
+      &__icon
+        display: block
+    .home_logo_list__item
+      text-align: center
+      margin-bottom: 15px
+    .footer_bottom
+      &__copyright
+        margin-bottom: 15px
+      &__nav
+        margin-bottom: 15px
+        ul
+          justify-content: flex-start
+    .home_logo_list
+      &__item
+        padding: 0 15px
+        width: 45%
+    .header_mobile
+      nav
+        ul
+          .menu-item-has-children
+            .sub-menu
+              width: 100%
+              border: 0
+              background-color: initial
+              li
+                width: 100%
+                margin-bottom: 0
+                a
+                  &:hover
+                    background-color: initial
+
+  // break max-1024
+  @media only screen and (min-width: $r-768) and (max-width: $r-992)
+    .home_call
+      background-position: 200px bottom
+    .home_way_item
+      &__table
+        ul
+          width: 66%
+
+  // break max-1024
+  @media only screen and (min-width: $r-768) and (max-width: $r-1200)
+    .header_wrap
+      &__nav
+        ul
+          li
+            a
+              font-size: 12px
+              padding: 0 10px
+    .header_nav__form
+      input[type='email'], input[type='submit']
+        width: 150px
+        height: 35px
+        font-size: 13px
+    .footer_bottom
+      &__socials
+        ul
+          li
+            margin: 0 5px
+
+  // break max-1024
+  @media only screen and (min-width: $r-992 + 1) and (max-width: $r-1200)
+    .home_way_item
+      &__table
+        ul
+          width: 50%
+
+  // break max-1200
+  @media only screen and (max-width: $r-1200)
+    .container
+      padding: 0 15px

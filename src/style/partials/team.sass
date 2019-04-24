@@ -1,0 +1,129 @@
+// About
+
+.about_header
+  padding: 60px 0 0 0
+  &__title
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: 0.7px
+      margin-bottom: 50px
+  &__img
+    img
+      width: 100%
+
+// About text
+
+.about_text
+  padding: 70px 0 35px 0
+  &__item
+    margin-bottom: 70px
+    .title
+      margin-bottom: 30px
+    p
+      text-align: center
+    &:last-child
+      margin-bottom: 0
+
+// Team list
+
+.team_list
+  padding: 35px 0 0 0
+  &__title
+    margin-bottom: 120px
+  &__wrapper
+    justify-content: space-between
+
+.team_item
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05)
+  background-color: white
+  width: 93%
+  margin: 0 auto 150px auto
+  &__avatar
+    margin: 0 0 35px 0
+    text-align: center
+    img
+      margin: -50px 0 0 0
+      width: 100px
+      border-radius: 50%
+  &__info
+    text-align: center
+    padding: 0 25px
+    .title
+      color: #2f4050
+      font-size: 20px
+      font-weight: 500
+      line-height: 22px
+      text-transform: uppercase
+      margin-bottom: 7px
+    span
+      display: block
+      color: #356ae4
+      font-size: 16px
+      font-weight: 500
+      line-height: 18px
+      margin-bottom: 25px
+    p
+      min-height: 140px
+      color: #2f4050
+      font-size: 16px
+      font-weight: 300
+      line-height: 20px
+  &__location
+    background-color: #f2f3f3
+    padding: 17px 0
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 16px
+      margin-right: 10px
+    span
+      color: #2f4050
+      font-size: 16px
+      font-weight: 500
+      line-height: 1
+
+// Team purpose
+
+.team_purpose
+  padding: 35px 0
+  &__text
+    .title
+      margin-bottom: 30px
+
+// Team values
+
+.team_values
+  padding: 35px 0
+  &__title
+    margin-bottom: 50px
+  &__list
+    justify-content: space-between
+
+.team_values_list
+  margin-bottom: 100px
+  &:nth-child(odd)
+    .team_values_list__item
+      &:first-child
+        order: 2
+      &:nth-child(2)
+        order: 1
+  &__item
+    .title
+      color: black
+      font-size: 26px
+      font-weight: 600
+      line-height: 1.2
+      margin-bottom: 30px
+    p
+      width: 100%
+    img
+      height: 220px
+
+// About trial
+
+.about_trial
+  .home_intro__form form input[type="submit"]
+    font-size: 12px

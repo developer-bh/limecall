@@ -1,0 +1,139 @@
+// Pricing header
+
+.pricing_header
+  padding: 60px 0 0 0
+  &__title
+    margin-bottom: 50px
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: 0.7px
+      margin-bottom: 50px
+
+// Pricing table
+
+.pricing_table
+  padding: 70px 0
+  &__wrapper
+    justify-content: space-between
+    margin-bottom: 20px
+  &__text
+    p
+      font-size: 14px
+      color: #a0a0a0
+  .col-lg-3
+    &:last-child
+      .pricing_item
+        &__price
+          font-size: 34px
+          span
+            display: none
+
+.pricing_item
+  border: 1px solid #dedfe0
+  text-align: center
+  padding: 30px 0 0 0!important
+  position: relative
+  margin-bottom: 80px
+  &__deal
+    width: 100%
+    position: absolute
+    top: -55px
+    background-color: #53cfeb
+    padding: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    color: white
+    font-size: 16px
+    font-weight: 500
+  &__title
+    margin-bottom: 15px
+    .title
+      color: $color_black
+      font-size: 30px
+      font-weight: 400
+  &__price
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    color: #394f5a
+    font-size: 46px
+    line-height: 1
+    font-weight: 400
+    margin-bottom: 15px
+    span
+      font-size: 12px
+  &__info
+    padding-bottom: 20px
+    border-bottom: 1px solid #dfdfdf
+    p
+      text-transform: uppercase
+      color: #a0a0a0
+      font-size: 16px
+      font-weight: 500
+  &__list
+    padding: 30px 0 50px 0
+    ul
+      li
+        margin-bottom: 15px
+        font-size: 18px
+        font-weight: 300
+        color: #394f5a
+        b
+          font-weight: 600
+
+  &__btn
+    a
+      background-color: #dedfe0
+      padding: 10px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-transform: uppercase
+      color: #394f5a
+      font-size: 16px
+      font-weight: 500
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+        color: $color_black
+        text-decoration: none
+        background-color: rgba(222, 223, 224, 0.51)
+    .btn_green
+      background-image: linear-gradient(45deg, #537c44 0%, #b1c949 100%)
+      color: white
+
+// Pricing faq
+
+.pricing_faq
+  padding: 70px 0
+  &__title
+    margin-bottom: 50px
+  &__wrapper
+    justify-content: space-between
+
+.faq_wrap
+  &__item
+    margin-bottom: 30px
+    p
+      padding-left: 30px
+      width: 80%
+      max-width: 100%
+    .title
+      position: relative
+      display: flex
+      align-items: center
+      padding-left: 30px
+      font-size: 24px
+      color: #283238
+      margin-bottom: 30px
+      &:before
+        position: absolute
+        content: ''
+        left: 0
+        width: 10px
+        height: 10px
+        background-image: linear-gradient(to right, #537c44 0%, #b1c949 100%)

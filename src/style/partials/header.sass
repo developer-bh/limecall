@@ -1,0 +1,195 @@
+// Header
+
+.header
+  background-color: white
+  max-width: 1920px
+  padding: 25px 30px
+  margin: 0 auto
+  z-index: 1
+  &_wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__left
+      display: flex
+      align-items: center
+      a
+        &:nth-child(2)
+          display: none
+    &__icon
+      display: none
+      text-align: right
+      a
+        &:nth-child(2)
+          display: none
+      i
+        font-size: 24px
+        color: $color_black
+    &__nav
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      nav
+        width: 100%
+      ul
+        width: 100%
+        display: flex
+        list-style: none
+        align-items: center
+        margin-bottom: 0!important
+        .highlight
+          a
+            color: #537c44
+            text-decoration: underline
+        .active
+          a
+            &:before
+              transition: 0.3s
+              transform: rotate(180deg)
+        li
+          line-height: 16px
+          a
+            text-transform: uppercase
+            color: $color_black
+            font-size: 16px
+            line-height: 16px
+            font-weight: 500
+            padding: 0 12px
+            transition: 0.3s
+            &:hover
+              transition: 0.3s
+              color: #537c44
+        .current-menu-item
+          a
+            text-decoration: underline
+        .menu-item-has-children
+          a
+            display: flex
+            align-items: center
+            position: relative
+            &:before
+              position: absolute
+              content: '\f0d7'
+              font-family: "Font Awesome 5 Free"
+              font-weight: 900
+              right: -2px
+              top: 0
+              transition: 0.3s
+          .sub-menu
+            width: 400px
+            max-width: 100%
+            display: none
+            position: absolute
+            top: 30px
+            flex-direction: column
+            border: 1px solid #ebeaeb
+            border-radius: 4px
+            padding: 20px 0 10px 20px
+            z-index: 2
+            background-color: white
+            li
+              width: 46%
+              display: inline-block
+              margin: 0 10px 10px 0
+              a
+                text-transform: none
+                padding: 7px 5px
+                transition: 0.3s
+                border-radius: 4px
+                &:before
+                  display: none
+                &:hover
+                  text-decoration: none
+                  transition: 0.3s
+                  background-color: #fafafa
+  &_nav
+    &__form
+      form
+        display: flex
+      input[type="email"]
+        text-transform: uppercase
+        color: $color_black
+        font-size: 12px
+        font-weight: 500
+        width: 175px
+        height: 46px
+        border: 1px solid $color_black
+        padding-left: 20px
+        &::placeholder
+          color: $color_black
+      input[type='submit']
+        text-transform: uppercase
+        color: white
+        font-size: 16px
+        font-weight: 500
+        width: 195px
+        height: 46px
+        border: 1px solid $color_black
+        background-color: $color_black
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
+
+// Header mobile
+
+.header_mobile
+  position: absolute
+  left: -200%
+  top: 0
+  width: 100%
+  max-width: 100%
+  height: 100%
+  background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
+  padding: 20px 15px
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
+  z-index: 1
+  transition: 0.6s
+  &.slide
+    transition: 0.6s
+    left: 0
+  nav
+    margin-bottom: 30px
+    ul
+      flex-direction: column
+      align-items: flex-start
+      li
+        margin-bottom: 10px
+        a
+          color: white
+          font-size: 22px
+      .menu-item-has-children, .has-child
+        a
+          &:before
+            display: none
+        .sub-menu
+          padding: 20px 30px
+          display: block
+          position: initial
+          box-shadow: none
+          li
+            &:last-child
+              margin-bottom: 0
+
+// Header white
+
+.header_white
+  .header_wrap
+    &__nav
+      ul
+        li
+          a
+            color: white
+        .menu-item-has-children
+          a
+            color: white
+            &:before
+              color: white
+          .sub-menu
+            a
+              color: $color_black
+  .header_mobile
+    ul
+      li
+        a
+          color: $color_black

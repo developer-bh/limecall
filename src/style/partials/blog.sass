@@ -1,0 +1,217 @@
+// Blog header
+
+.blog_header
+  padding: 150px 0 50px 0
+  margin-top: -99px
+  &__wrapper
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: .7px
+      margin-bottom: 20px
+    p
+      color: $color_black
+      font-size: 24px
+
+// Blog list
+
+.blog_list
+  background-color: #f4f4f4
+  padding: 75px 0
+  .container
+    position: relative
+  .nav
+    display: flex
+    justify-content: center
+    width: 100%
+    position: absolute
+    left: 0
+    top: -110px
+    .nav-item
+      margin: 0 35px
+      .nav-link
+        color: $color_black
+        background-color: initial
+        text-transform: uppercase
+        font-weight: 400
+      .active
+        background-color: initial
+        position: relative
+        display: flex
+        justify-content: center
+        &:before
+          position: absolute
+          content: ''
+          bottom: -5px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 10px 10px 0 10px
+          border-color: #537c44 transparent transparent transparent
+
+.blog_item
+  margin-bottom: 50px
+  &__title
+    margin-bottom: 15px
+    .title
+      line-height: 1
+      min-height: 85px
+      a
+        color: #283238
+        font-size: 24px
+        font-weight: 400
+        text-decoration: none
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          opacity: 0.8
+  &__img
+    height: 150px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    margin-bottom: 15px
+    border: 1px solid #eee
+    transition: 0.3s
+    &:hover
+      transition: 0.3s
+      opacity: 0.8
+  p
+    color: #283238
+    margin-bottom: 25px
+
+.blog_info
+  display: flex
+  &__avatar
+    width: 50px
+    height: 50px
+    background-color: #f4f4f4
+    border-radius: 50%
+    margin-right: 20px
+    img
+      border-radius: 50%
+  &__text
+    .title
+      color: #b8b8b8
+      font-size: 16px
+      font-weight: 400
+      margin-bottom: 10px
+    p
+      color: #9f9f9f
+      font-size: 14px
+      font-weight: 300
+      margin-bottom: 0
+
+// Blog single
+
+.blog_single 
+  padding: 70px 0
+  display: block
+  &__breadcrumbs
+    margin-bottom: 30px
+    a
+      font-size: 14px
+      color: $color_black
+      display: flex
+      align-items: center
+      transition: 0.3s
+      i
+        color: $color_black
+        margin-right: 5px
+        transition: 0.3s
+        position: relative
+        left: 0
+      &:hover
+        color: $color_black
+        transition: 0.3s
+        text-decoration: none
+        i
+          left: -5px
+    .breadcrumbs a, .breadcrumbs span
+      font-size: 12px
+    .separator
+      margin: 0 3px
+
+.single_content 
+  width: 680px
+  max-width: 100%
+  margin: 0 auto
+  .blog_info
+    margin-bottom: 30px
+  &__title
+    .title
+      color: $color_black
+      font-size: 36px
+      font-weight: 500
+      letter-spacing: 1.15px
+      margin-bottom: 25px
+  &__image
+    position: relative
+    width: 100%
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 0 60px 0
+  &__text
+    margin-bottom: 50px
+  &__btns
+    display: flex
+    justify-content: center
+    align-items: center
+    a
+      margin: 0 10px
+
+.single_content__image img, .how_content__text img
+  width: 100%
+
+.single_content__text p, .how_content__text p
+  font-size: 19px
+  color: #333333
+  font-weight: 300
+  line-height: 30px
+  margin-bottom: 20px
+  b, strong
+    font-weight: 600
+
+.single_content__text ul li, .how_content__text ul li
+  font-size: 20px
+  color: #333333
+  font-weight: 300
+  margin: 0 0 0 50px
+  list-style: disc
+  b, strong
+    font-weight: 600
+
+.single_content__text ol li, .how_content__text ol li
+  font-size: 20px
+  color: #333333
+  font-weight: 300
+  margin: 0 0 0 50px
+  list-style: number
+  b, strong
+    font-weight: 600
+
+.single_content__text figure, .how_content__text figure
+  border: 1px solid #eee
+
+.single_content__text figure img, .how_content__text figure img
+  margin: 0
+
+.single_content__text p b, .single_content__text p strong, .how_content__text p b, .how_content__text p strong
+  font-weight: 600
+
+.single_content__text img, .how_content__text img
+  margin: 30px 0
+  height: auto
+  max-width: 100%
+
+.single_content__text h1, .single_content__text h2, .single_content__text h3, .single_content__text h4, .single_content__text h5, .single_content__text h6,
+.how_content__text h1, .how_content__text h2, .how_content__text h3, .how_content__text h4, .how_content__text h5, .how_content__text h6
+  font-weight: 600
+  color: $color_black
+  margin: 20px 0
+  b, strong
+    font-weight: 600

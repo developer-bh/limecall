@@ -1,0 +1,65 @@
+// Features header
+
+.features_header
+  padding: 60px 0 0 0
+  &__title
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: 0.7px
+      margin-bottom: 30px
+    p
+      margin-bottom: 50px
+  &_top_list
+    &__item
+      text-align: center
+      width: 82%
+      max-width: 100%
+      margin: 0 auto 60px auto
+      img
+        width: 35%
+        margin-bottom: 20px
+  &__img
+    margin-bottom: 50px
+    img
+      width: 100%
+  &__list
+    margin-bottom: 50px
+    ul
+      li
+        position: relative
+        padding-left: 20px
+        display: flex
+        align-items: center
+        &:before
+          position: absolute
+          content: ''
+          width: 10px
+          height: 10px
+          border: 1px solid #537c44
+          border-radius: 50px
+          left: 0
+        p
+          margin-bottom: 0
+
+// Features item
+
+.features_item
+  padding: 70px 0
+  &__grey
+    background-color: #f6f6f6
+  &__title
+    margin-bottom: 50px
+  &__wrap
+    justify-content: space-between
+    align-items: center
+
+.features_wrap
+  &__text
+    .title
+      font-size: 45px
+      font-weight: 300
+      margin-bottom: 15px
+      b
+        font-weight: 600

@@ -1,0 +1,21 @@
+{
+  "name": "habr",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "swiper": "^4.3.5",
+    "bootstrap": "^4.3.1",
+    "aos": "^2.3.4"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

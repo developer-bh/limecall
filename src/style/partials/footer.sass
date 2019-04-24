@@ -1,0 +1,154 @@
+// Footer
+
+.footer
+  background-color: #111111
+  padding: 50px 0 20px 0
+  &_wrap
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+      .title
+        text-transform: uppercase
+        color: white
+        font-size: 14px
+        font-weight: 600
+        letter-spacing: 0.45px
+        margin-bottom: 15px
+      a
+        color: #858585
+        font-size: 14px
+        font-weight: 300
+        letter-spacing: 0.45px
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          color: white
+  &__trial
+    margin-bottom: 50px
+  &__socials
+    display: flex
+    flex-direction: row
+    margin-bottom: 0!important
+    li
+      margin-right: 10px
+
+  &__subscribe
+    form
+      label
+        margin-top: 10px
+      a
+        border: 0
+        padding: 0
+      .ajax-loader
+        display: none!important
+      .wpcf7-acceptance
+        span
+          input
+            height: auto
+      span.wpcf7-not-valid-tip
+        display: none
+      .wpcf7-not-valid
+        border-color: red
+      div.wpcf7-validation-errors, div.wpcf7-acceptance-missing
+        color: #858585
+        display: block
+        font-size: 12px
+        font-weight: 300
+        text-align: right
+      .wpcf7-mail-sent-ok
+        color: #858585
+        display: block
+        font-size: 12px
+        font-weight: 300
+        text-align: right
+      p
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        flex-wrap: wrap
+      p
+        width: 100%
+        color: #858585
+        font-size: 12px
+        font-weight: 300
+        letter-spacing: 0.45px
+        margin-bottom: 0
+        text-align: right
+      input
+        background-color: initial
+        border: 1px solid #858585
+        margin-right: 10px
+        height: 35px
+        font-size: 12px
+        font-weight: 500
+        border-radius: 3px
+        text-transform: uppercase
+        color: #858585
+        outline: 0
+      input[type="email"]
+        padding-left: 20px
+      input[type="submit"]
+        transition: 0.3s
+        margin-right: 0
+        &:hover
+          transition: 0.3s
+          background-color: #858585
+          color: white
+
+    a
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      color: #858585
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.45px
+      border: 1px solid #858585
+      padding: 10px 30px
+      border-radius: 10px
+
+.footer_bottom
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  &__copyright
+    p
+      color: #858585
+      font-size: 14px
+      font-weight: 300
+      letter-spacing: 0.45px
+      margin-bottom: 0
+  &__nav
+    ul
+      margin-bottom: 0!important
+      display: flex
+      justify-content: center
+      li
+        a
+          padding: 0 10px
+          color: #858585
+          font-size: 14px
+          font-weight: 300
+          letter-spacing: 0.45px
+        &:first-child
+          a
+            padding-left: 0
+        &:last-child
+          a
+            padding-right: 0
+  &__socials
+    ul
+      display: flex
+      li
+        margin: 0 10px
+        a
+          color: #858585
+          font-size: 14px
+          font-weight: 300
+          letter-spacing: 0.45px
+          i
+            color: white
+      &:first-child
+        margin-left: 0
+      &:last-child
+        margin-right: 0
