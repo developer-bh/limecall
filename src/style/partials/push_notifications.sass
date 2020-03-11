@@ -1,0 +1,162 @@
+// Push header
+
+.push_header
+  padding: 60px 0
+  .title
+    margin-bottom: 30px
+  p
+    margin-bottom: 50px
+  img
+    max-width: 600px
+
+// Push blocks
+
+.push_blocks
+  padding: 60px 0
+  background-size: contain
+  background-position: center center
+  background-repeat: no-repeat
+  background-attachment: fixed
+  &:nth-of-type(even)
+    background-color: #f7f8f8
+  &:nth-of-type(odd)
+    .push_blocks__item
+      &:first-child
+        order: 2
+      &:nth-of-type(2)
+        order: 1
+  .title__secondary
+    margin-bottom: 30px
+  img
+    max-height: 500px
+
+// Push how it works
+
+.push_hiw
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color: $color_blue
+  .title__secondary
+    color: white
+  &__wrapper
+    div[class*=col-]
+      display: flex
+      align-items: flex-start
+      &:last-of-type
+        .line
+          display: none
+  .item
+    max-width: 285px
+    margin: 0 auto
+    .title, p
+      font-size: 18px
+      color: white
+    img
+      height: 100px
+  .line
+    display: flex
+    align-items: center
+    position: absolute
+    width: 80px
+    height: 3px
+    right: -40px
+    top: 50px
+    background-color: white
+    &:before,
+    &:after
+      position: absolute
+      content: ''
+      width: 10px
+      height: 10px
+      border-radius: 50px
+      background-color: white
+    &:before
+      left: 0
+    &:after
+      right: 0
+
+// Push results
+
+.push_results
+  background-color: #f7f8f8
+  .item
+    img
+      height: 100px
+    span
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+
+// Push review
+
+.push_review
+  background-color: white
+  .testimonial_item
+    border: 1px solid #f3f3f3
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+
+// Push advantages
+
+.push_advantages
+  padding: 70px 0
+  background-color: #fafafa
+  position: relative
+  .shapes
+    img
+      max-width: 180px
+      &:first-child
+        position: absolute
+        left: 0
+        bottom: 0
+      &:nth-of-type(2)
+        position: absolute
+        right: 0
+        top: 0
+  &__wrapper
+    margin-top: 50px
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    margin-bottom: 50px
+    .img
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 80px
+      height: 80px
+      background-color: white
+      box-shadow: 0 0 16px 0 rgba(44, 144, 231, 0.16)
+      border-radius: 50%
+    img
+      width: 48px
+    .text
+      width: calc(100% - 100px)
+      .title
+        font-size: 16px
+        font-weight: 500
+        margin-bottom: 10px
+      p
+        font-size: 14px
+        max-width: 80%
+
+//Push highlight
+
+.push_highlight
+  padding: 70px 0
+  &__wrapper
+    margin-top: 50px
+  &__item
+    margin-bottom: 50px
+    img
+      height: 80px
+      margin-bottom: 15px
+    .title
+      font-size: 16px
+      font-weight: 500
+      margin-bottom: 10px
+    p
+      font-size: 14px

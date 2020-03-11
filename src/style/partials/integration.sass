@@ -13,7 +13,8 @@
   &__list
     justify-content: space-between
     margin-bottom: 50px
-
+  &__about
+    justify-content: center
 
 .integration_item
   width: 14%
@@ -24,13 +25,36 @@
   align-items: center
   justify-content: center
   margin-bottom: 100px
+  padding: 10px
+  &:hover
+    background-color: #f4f4f4
+    .integration_item__icon
+      img
+        &:first-child
+          display: none
+        &:nth-of-type(2)
+          display: block
+    p
+      color: $color_black
+      font-weight: 600
   &.active
     background-color: #f4f4f4
+    .integration_item__icon
+      img
+        &:first-child
+          display: none
+        &:nth-of-type(2)
+          display: block
+    p
+      color: $color_black
+      font-weight: 600
   &__icon
     margin: 0 10px 0 0
     img
       width: 35px
       height: auto
+      &:nth-of-type(2)
+        display: none
   p
     width: 55%
     color: #b7b7b7
@@ -42,6 +66,7 @@
     margin-bottom: 0
 
 .integration_info
+  margin-bottom: 30px
   &__border
     border: 1px solid #f4f4f4
     position: relative
@@ -71,7 +96,6 @@
   &__text
     display: flex
     flex-direction: column
-    justify-content: space-between
     text-align: center
     padding: 15px
     width: 100%
@@ -79,6 +103,7 @@
     transition: 0.3s
     margin-bottom: 30px
   a
+    width: 100%
     text-align: center
     background-color: #f4f4f4
     padding: 15px
@@ -91,5 +116,97 @@
       color: white
       text-decoration: none
       background-color: #283238
+  &__img
+    padding: 10px 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    min-height: 100px
+    max-height: 100px
+    img
+      max-height: 60px
+      width: auto
 
+// Sales tools
 
+.automation_list
+  padding: 50px 0
+  &__text
+    margin: 0 auto
+
+.automation_item
+  list-style: none
+  margin: 0 auto 50px auto
+  padding: 20px 0
+  border-radius: 5px
+  box-shadow: 4px 4px 5px 1px #dbdbdb
+  border: 1px solid #dbdbdb
+  .rns
+    display: none
+  a
+    text-align: center
+    display: block
+    margin-bottom: 25px
+    color: #455360
+    font-size: 24px
+  p
+    font-size: 18px
+    color: black
+    font-weight: 200
+  ul
+    padding-left: 20px
+    li
+      list-style: disc
+      font-size: 18px
+      color: black
+      font-weight: 200
+  table
+    display: flex
+    width: 100%
+    margin-bottom: 16px
+    tbody
+      width: 100%
+      tr
+        display: flex
+        justify-content: space-between
+        border: 1px solid #455360
+        td
+          width: 50%
+          max-width: 100%
+          font-size: 18px
+          color: black
+          font-weight: 200
+          padding: 0 20px
+          &:first-of-type
+            border-right: 1px solid #455360
+  &__img
+    text-align: center
+
+.plugins_cat
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  a
+    margin: 0 10px 10px 0
+    font-size: 18px
+    background: #283238
+    color: white
+    text-decoration: none
+    padding: 8px 31px
+    border-radius: 5px
+    font-weight: 500
+    &:hover
+      color: white
+      background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
+
+.tools_list
+  .page-title-sm
+    width: 100%
+    margin-bottom: 30px
+    color: #455360
+  .automation_item
+    width: 100%
+
+.single_int
+  &__image
+    max-width: 300px

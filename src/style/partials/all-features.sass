@@ -1,0 +1,45 @@
+// All features header
+
+.af_header
+  border-bottom: 1px solid #e9eaeb
+
+// All features list
+
+.af_bar
+  padding: 10px 0
+  background-color: $color_black
+  z-index: 11
+  &.fixed
+    position: fixed
+    top: 0
+    width: 100%
+  ul
+    margin-bottom: 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    li
+      a
+        color: white
+      &.active
+        a
+          text-decoration: underline
+          color: #d2d2d2
+
+.af_list
+  padding: 60px 0
+  .title__secondary
+    margin-bottom: 35px
+  .box
+    padding-top: 50px
+  &__item
+    margin-bottom: 35px
+    .title
+      display: flex
+      align-items: center
+      font-size: 18px
+      font-weight: 600
+      margin-bottom: 5px
+      img
+        width: 25px
+        margin-right: 6px

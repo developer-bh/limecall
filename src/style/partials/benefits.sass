@@ -1,0 +1,109 @@
+// Benefits
+
+.benefits_hero
+  padding: 60px 0
+  background-color: #f6f6f7
+  .title
+    margin-bottom: 30px
+  .btn_circle
+    margin-bottom: 50px
+  ul
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    li
+      display: flex
+      align-items: center
+      position: relative
+      padding-left: 20px
+      margin-right: 25px
+      &:before
+        position: absolute
+        content: ''
+        background-image: url("../img/icon_benef_true.png")
+        background-size: cover
+        background-repeat: no-repeat
+        width: 11px
+        height: 8px
+        left: 0
+  &__image
+    text-align: right
+
+// Benefits list
+
+.benefits_list
+  padding: 70px 0
+  background-color: #f6f6f7
+  div[class*=col-]
+    margin-bottom: 30px
+  .benefits_full
+    flex: initial
+    max-width: 100%
+    .benefits_item
+      display: flex
+      justify-content: space-between
+      &__info
+        width: 40%
+      &__img
+        width: 60%
+
+.benefits_item
+  padding: 50px 50px 0 50px
+  background-color: white
+  border-radius: 8px
+  height: 100%
+  &__info
+    span
+      display: flex
+      align-items: center
+      justify-content: center
+      background-color: $color_blue
+      border-radius: 50%
+      width: 45px
+      height: 45px
+      color: white
+      font-weight: 600
+      margin-bottom: 30px
+    .title__secondary
+      margin-bottom: 15px
+    ul
+      li
+        &:before
+          background-image: url("../img/icon_benef_true.png") !important
+
+  &__image
+    margin-top: 40px
+    text-align: center
+    img
+      max-width: 400px
+  ul
+    padding: 0
+    margin: 40px 0
+    li
+      display: flex
+      align-items: center
+      position: relative
+      padding-left: 20px
+      margin-bottom: 15px
+      &:before
+        position: absolute
+        content: ''
+        background-image: url("../img/icon_benef_true_white.png")
+        background-size: cover
+        background-repeat: no-repeat
+        width: 11px
+        height: 8px
+        left: 0
+
+
+.benefits_cta
+  background-color: $color_blue
+  .title__secondary
+    color: white
+  ul
+    li
+      color: white
+  p
+    color: white
+

@@ -2,20 +2,25 @@
 
 .footer
   background-color: #111111
-  padding: 50px 0 20px 0
+  padding: 80px 0 24px 0
+  position: relative
+  z-index: 1
   &_wrap
     justify-content: space-between
     flex-wrap: wrap
+    margin-bottom: 90px
     &__item
       .title
-        text-transform: uppercase
         color: white
-        font-size: 14px
-        font-weight: 600
+        font-size: 20px
+        font-weight: 400
+        line-height: 25px
         letter-spacing: 0.45px
         margin-bottom: 15px
+      li
+        padding-bottom: 11px
       a
-        color: #858585
+        color: rgba(255, 255, 255, 0.5)
         font-size: 14px
         font-weight: 300
         letter-spacing: 0.45px
@@ -31,7 +36,6 @@
     margin-bottom: 0!important
     li
       margin-right: 10px
-
   &__subscribe
     form
       label
@@ -112,12 +116,30 @@
   justify-content: space-between
   align-items: center
   &__copyright
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    ul
+      margin: 0
+      padding: 0
+      display: flex
+      li
+        margin: 0 15px
+        a
+          color: rgba(255, 255, 255, 0.51)
+          font-size: 14px
+          font-weight: 300
+          letter-spacing: 0.45px
+          transition: 0.3s
+          &:hover
+            transition: 0.3s
+            color: white
     p
-      color: #858585
+      color: white
       font-size: 14px
       font-weight: 300
       letter-spacing: 0.45px
-      margin-bottom: 0
+      margin: 0 0 0 15px
   &__nav
     ul
       margin-bottom: 0!important

@@ -1,3 +1,52 @@
+// Sticky
+
+.sticky_header
+  display: none
+  width: 100%
+  height: 50px
+  position: fixed
+  padding: 5px 0
+  top: 0
+  left: 0
+  z-index: 10
+  background-color: white
+  transition: .3s
+  .row
+    align-items: center
+    .swp_social_panel
+      margin: 0!important
+  img
+    height: 35px
+    width: auto
+  .title
+    font-size: 20px
+  &__progress
+    position: relative
+    height: 10px
+    top: 0
+    background-color: white
+    z-index: -1
+
+progress
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  height: 2px
+  -moz-appearance: none
+  border: none
+  background-color: whitesmoke
+  color: $color_blue
+
+progress::-webkit-progress-bar
+  background-color: transparent
+
+progress::-webkit-progress-value
+  background-color: $color_blue
+
+progress::-moz-progress-bar
+  background-color: $color_blue
+
 // Blog header
 
 .blog_header
@@ -48,7 +97,7 @@
           height: 0
           border-style: solid
           border-width: 10px 10px 0 10px
-          border-color: #537c44 transparent transparent transparent
+          border-color: $color_blue transparent transparent transparent
 
 .blog_item
   margin-bottom: 50px
@@ -108,7 +157,13 @@
 .blog_single 
   padding: 70px 0
   display: block
+  .container
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
   &__breadcrumbs
+    width: 100%
     margin-bottom: 30px
     a
       font-size: 14px
@@ -132,11 +187,50 @@
       font-size: 12px
     .separator
       margin: 0 3px
+  &__popular
+    width: 30%
+    max-width: 100%
+    height: 100%
+    position: absolute
+    right: 0
+    .popular_title
+      color: $color_black
+      font-size: 20px
+      font-weight: 500
+      line-height: 22px
+      margin-bottom: 20px
+    ul
+      position: sticky
+      top: 60px
+      box-shadow: 0 0 5px rgba(0,0,0,.05)
+      background-color: white
+      padding: 20px
+    li
+      margin-bottom: 15px
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+      padding-bottom: 10px
+      &:last-child
+        border-bottom: 0
+      a
+        &:hover
+          text-decoration: none
+          transition: 0.3s
+          img
+            opacity: 0.8
+    img
+      box-shadow: 0 0 5px rgba(0,0,0,.05)
+      height: 55px
+      width: auto
+      margin-bottom: 10px
+      transition: 0.3s
+    .title
+      color: $color_black
+      font-size: 14px
+      font-weight: 600
 
 .single_content 
-  width: 680px
+  width: 63%
   max-width: 100%
-  margin: 0 auto
   .blog_info
     margin-bottom: 30px
   &__title
@@ -215,3 +309,26 @@
   margin: 20px 0
   b, strong
     font-weight: 600
+
+// Resources
+
+.blog_navigation__categories 
+  width: 100%
+
+.blog_navigation__categories ul 
+  display: flex
+  align-items: center
+  list-style: none
+
+.blog_navigation__categories ul li 
+  margin: 0 15px 0 0
+
+.blog_navigation__categories ul li a 
+  color: #455360
+  font-family: yorkten-slab-normal, sans-serif
+  font-size: 16px
+  font-weight: 500
+  letter-spacing: 0.65px
+
+.blog_navigation ul .current-menu-item 
+  border-bottom: 2px solid #455360

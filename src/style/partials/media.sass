@@ -6,7 +6,13 @@ $r-1200: 1200px
 body
   // break max-768
   @media only screen and (max-width: $r-768)
+    .show_desctop
+      display: none
+
     // Home
+
+    .home_top_v3
+      padding-top: 60px
 
     .home_intro
       &__title
@@ -54,6 +60,28 @@ body
             width: 80% !important
             margin-bottom: 10px!important
 
+    .home_top
+      &__text
+        .title
+          font-size: 30px
+        p
+          padding-right: 0
+      &__image
+        padding-top: 70px
+      &__logos
+        ul
+          li
+            margin-bottom: 10px
+
+    .home_list
+      &__wrapper
+        .img
+          display: none
+
+    .contant_box_404
+      h3
+        font-size: 40px
+
     // Features
 
     .features_header
@@ -71,6 +99,25 @@ body
       &__item
         width: 70%
 
+    .features_hero
+      .title
+        font-size: 36px
+
+    .features_list
+      &__item
+        margin: 0 auto 50px auto
+
+    .features_cat_hero
+      .title
+        font-size: 36px
+      img
+        max-width: 100%
+    .features_cat_list
+      .row
+        text-align: center
+      h3
+        font-size: 36px
+
     // Blog
 
     .blog_list
@@ -79,6 +126,17 @@ body
           margin: 0 5px
           .nav-link
             padding: 5px 0
+
+    .single_content
+      width: 100%
+
+    .blog_single__popular
+      display: none
+
+    .blog_header
+      &__wrapper
+       .title
+          font-size: 36px
 
     // Cases
 
@@ -107,6 +165,72 @@ body
           &:nth-child(2)
             order: 2
 
+    // Pricing
+
+    .pricing_compare_item
+      &__title
+        .title
+          font-size: 8px
+      &__name
+        p
+          font-size: 8px
+      &__full
+        .title
+          font-size: 8px
+      &__text
+        padding-top: 21px
+        p
+          font-size: 8px
+
+    .pricing_compare_wrap
+      padding: 0 15px
+    .pricing_compare_item
+      padding: 0 0
+      position: relative
+      &__title
+        padding: 10px 0
+        .title
+          font-size: 6px
+      &__name
+        min-height: 70px
+      &__text
+        min-height: 70px
+
+    // Pricing new
+
+    .pricing_hero
+      .title
+        font-size: 36px
+
+    .plans_compare
+      &__first
+        flex-wrap: wrap
+        border-left: 1px solid #d4d4d7
+        p
+          font-size: 14px
+      .t-xl
+        width: 100%
+      .t-xs
+        width: 25%
+      &__table
+        flex-wrap: wrap
+        border-left: 1px solid #d4d4d7
+        &:nth-of-type(even)
+          background-color: transparent
+        div
+          p
+            padding: 10px 15px
+          &:first-child
+            background: #fbfbfb
+
+    .plans_compare
+      .hover-tooltip
+        .tooltip
+          left: 0
+          bottom: 42px
+          &:before
+            display: none
+
     // Contacts
 
     .contacts
@@ -126,18 +250,335 @@ body
     .integration_item
       width: 47%
 
+    // Callpage
+
+    .callpage_header
+      &__text
+        .title
+          font-size: 36px
+    .callpage_wrap
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 50px
+      &:nth-of-type(odd)
+        .callpage_wrap
+          &__text
+            order: 2
+          &__img
+            order: 1
+      &__item
+        text-align: center
+    .callpage_table
+      padding-bottom: 0
+    .callpage_table_item
+      p
+        padding: 5px 0
+        font-size: 12px
+
+    // How it works
+
+    .how_header
+      &__text
+        .title
+          font-size: 36px
+
+    // Best sales tools
+
+    .automation_item
+      table
+        tbody
+          tr
+            td
+              padding: 0 10px
+              font-size: 12px
+
+    // Product overview
+
+    .product_overview
+      &__header
+        padding: 150px 0 50px 0
+        .title
+          font-size: 42px
+      &__content
+        padding: 50px 0
+      &__nav
+        .menu-product-container
+          padding: 0 15px
+          ul
+            flex-wrap: wrap
+            padding-left: 0
+            li
+              &.current-menu-item
+                a
+                  font-weight: 500
+              a
+                width: 50%
+                padding: 5px 0
+                margin-right: 0
+                &.active
+                  font-weight: 600
+                &:before
+                  display: none
+
+    .header_product
+      .header_wrap
+        padding: 5px 15px
+
+    // Ecommerce
+
+    .ecommerce_header
+      &__title
+        .title
+          font-size: 36px
+      &__comment
+        .comment
+          padding: 30px 0
+          &:before
+            width: 100%
+            height: 100%
+            background-size: cover
+          p
+            max-width: 100%
+            margin-left: 20px
+            padding: 0 15px
+            font-size: 14px
+            line-height: 16px
+    .conversations_list
+      &__item
+        max-width: 345px
+    .personalize_list
+      &__item
+        img
+          max-width: 345px
+    .ecommerce_review
+      p
+        font-size: 18px
+        line-height: 20px
+
+    // All features
+
+    .af_header
+      &__text
+        .title
+          font-size: 36px
+
+    .af_bar
+      display: none
+
+    // Footer
+
+    .footer
+      &__subscribe
+        form
+          p
+            flex-direction: column
+
+    .footer_logo
+      display: block
+      margin-bottom: 35px
+
+    // Refunds
+
+    .refunds
+      &__top
+        .title
+          font-size: 36px
+
+    .refunds_list
+      .accordion
+        .card
+          .card-header
+            .btn
+              font-size: 18px
+              text-align: left
+          .collapse .card-body, .collapsing .card-body
+            padding: 30px 0 0
+
+    // CTA global
+
+    .cta_global
+      padding: 60px 0
+      &__btns
+        flex-direction: column
+        a
+          margin: 0 auto 15px auto
+
+    // Testimonial global
+
+    .testimonial_global
+      div[class*="col-"]
+        &:first-child
+          margin-bottom: 35px
+      &__text
+        margin-bottom: 20px
+        p
+          font-size: 24px
+
+    // Support
+
+    .support_left
+      p
+        margin-bottom: 35px
+      img
+        margin-bottom: 35px
+    .support_right
+      .item
+        margin-bottom: 35px
+        &:last-of-type
+          margin-bottom: 0
+
+    // How
+
+    .home_how
+      nav
+        .nav
+          margin: 0 auto
+
+    // Utm
+
+    .utm
+      div[class*=col-]
+        min-height: auto
+      &__text
+        padding: 30px 15px
+        min-height: auto
+        img
+          margin-bottom: 30px
+        .title
+          font-size: 26px
+          line-height: 1.2
+        p
+          font-size: 18px
+        small
+          font-size: 14px
+      &__image
+        padding: 30px 15px
+        text-align: center
+        min-height: auto
+        img
+          padding: 0
+
+    // Home top v3
+
+    .home_top_v3
+      &__info
+        margin-bottom: 35px
+        .title
+          font-size: 36px
+          margin-bottom: 30px
+        p
+          margin-bottom: 30px
+
+        .info
+          ul
+            justify-content: center
+            li
+              font-size: 18px
+          .rate
+            justify-content: center
+            flex-wrap: wrap
+            .stars
+              width: 100%
+              text-align: center
+            p
+              font-size: 18px
+
+    // Stars
+
+    .stars_hero
+      .title
+        font-size: 36px
+
+    // Benefits
+
+    .benefits_hero
+      &__image
+        text-align: center
+        margin-top: 35px
+
+    .benefits_item
+      padding: 15px 15px 0 15px
+      &__image
+        img
+          max-width: 100%
+
+    .benefits_cta
+      padding: 15px
+
+    .benefits_list
+      .benefits_full
+        .benefits_item
+          flex-direction: column
+          &__info
+            width: 100%
+          &__image
+            width: 100%
+
+    // Early
+
+    .early-stage
+      h1
+        font-size: 36px
+
+    .early-tabs
+      .nav-tabs
+        .nav-item
+          width: 100%
+          padding: 15px
+
+    // Affiliates
+
+    .affiliates-earn
+      .img
+        margin-top: 30px
+
+    .affiliates-manager
+      .wrapper
+        padding: 20px 15px
+        img
+          max-width: 300px
+
+    // Brand assets
+
+    .brand-assets-text
+      img
+        margin-top: 30px
+
+    .brand-assets-colors
+      .wrapper
+        .item
+          padding: 20px 15px
+
+
   // break max-1024
   @media only screen and (max-width: $r-992)
+    .header
+      padding-top: 15px
+    .header_mobile
+      width: 100%
+      height: 100vh
+      &__top
+        display: flex
+      .header_nav
+        display: flex
+    .header_nav
+      a
+        color: white
     .header_wrap
       position: relative
-      z-index: 2
       border-bottom: 1px solid rgba(255, 255, 255, 0.39)
       padding-bottom: 15px
+      z-index: 4
       &__nav
         ul
+          li
+            a
+              padding: 0
           .highlight
             a
               color: white
+          li
+            padding: 0
       &__left
         &.white
           a
@@ -154,21 +595,6 @@ body
               display: none
             &:nth-child(2)
               display: block
-    .header_white
-      .header_mobile
-        ul
-          li
-            a
-              color: white
-          .menu-item-has-children
-            .sub-menu
-              width: 100%
-              a
-                color: white
-    .header_mobile
-      padding-top: 120px
-      .header_nav
-        display: block
     .header_wrap
       &__nav
         display: none
@@ -179,6 +605,7 @@ body
       margin-bottom: 15px
     .footer_bottom
       &__copyright
+        flex-direction: column
         margin-bottom: 15px
       &__nav
         margin-bottom: 15px
@@ -188,29 +615,163 @@ body
       &__item
         padding: 0 15px
         width: 45%
-    .header_mobile
-      nav
-        ul
-          .menu-item-has-children
-            .sub-menu
-              width: 100%
-              border: 0
-              background-color: initial
-              li
-                width: 100%
-                margin-bottom: 0
-                a
-                  &:hover
-                    background-color: initial
+
+    .verifier_list__item:nth-child(2)
+      border-top: 0
+
+    .home_top
+      &__text
+        padding-top: 50px
+      &__image
+        text-align: center
+        img
+          max-width: 100%
+        .shape
+          display: none
+
+    .home_list
+      padding-bottom: 80px
+      &__wrapper [class*=' col-']
+        margin-bottom: 30px
+
+    .pricing_boxes
+      &__one
+        margin-bottom: 0
+      &__two
+        margin-bottom: 0
+        .row
+          box-shadow: none
+        .pricing_box
+          box-shadow: 0 0 25px rgba(0,0,0,.1)
+    .pricing_box
+      &__features
+        .title
+          text-align: center
+    .pricing_table__names .nav-tabs .nav-link
+      font-size: 18px
+    .pricing_list
+      justify-content: center
+
+    .product_ov_content
+      &__img
+        order: 2
+      &__info
+        order: 1
+        .title
+          font-size: 32px
+      &:nth-child(odd)
+        .product_ov_content__info
+          order: 1
+        .product_ov_content__img
+          order: 2
+
+    // Push notification
+
+    .push_header
+      div[class*=col-]
+        &:first-of-type
+          margin-bottom: 35px
+        &:nth-of-type(2)
+          text-align: center
+        img
+          max-width: 350px
+
+    .push_blocks
+      &__item
+        text-align: center
+        &:first-of-type
+          margin-bottom: 35px
+          img
+            max-width: 350px
+      &:nth-of-type(odd)
+        .push_blocks__item
+          &:first-of-type
+            order: 1
+          &:nth-of-type(2)
+            order: 2
+            text-align: center
+            margin-bottom: 35px
+            img
+              max-width: 350px
+
+    .push_hiw
+      .line
+        display: none
+
+    .push_advantages
+      &__item
+        flex-direction: column
+        align-items: center
+        .img
+          margin-bottom: 15px
+        .text
+          text-align: center
+          .title
+            font-size: 18px
+            font-weight: 600
+          p
+            font-size: 18px
+            max-width: 100%
+
+    .push_highlight
+      &__item
+        text-align: center
+        .title
+          font-size: 18px
+          font-weight: 600
+        p
+          font-size: 18px
 
   // break max-1024
   @media only screen and (min-width: $r-768) and (max-width: $r-992)
+    .sticky_header
+      .title
+        font-size: 12px
     .home_call
       background-position: 200px bottom
     .home_way_item
       &__table
         ul
           width: 66%
+    .pricing_compare_item
+      &__title
+        .title
+        font-size: 10px
+      &__name
+        p
+          font-size: 10px
+      &__full
+        .title
+        font-size: 10px
+      &__text
+        padding-top: 21px
+        p
+          font-size: 10px
+    .product_overview
+      &__nav
+        .menu-product-container
+          ul
+            padding-left: 0
+            li
+              a
+                font-size: 12px
+    .personalize_list
+      &__item
+        .title
+          min-height: 56px
+        img
+          max-width: 100%
+
+    .utm
+      &__text
+        padding: 50px 15px
+        .title
+          font-size: 40px
+          line-height: 1.2
+        p
+          font-size: 26px
+      &__image
+        padding: 50px 15px
 
   // break max-1024
   @media only screen and (min-width: $r-768) and (max-width: $r-1200)
@@ -231,6 +792,20 @@ body
         ul
           li
             margin: 0 5px
+    .home_top_v3__info .title
+      font-size: 40px
+
+  // break max-1024
+  @media only screen and (max-width: $r-1024)
+    .guides
+      .container
+        transform: inherit
+      &__bar
+        display: none
+      &__header
+        .title
+          font-size: 30px
+          text-align: left
 
   // break max-1024
   @media only screen and (min-width: $r-992 + 1) and (max-width: $r-1200)
@@ -238,8 +813,21 @@ body
       &__table
         ul
           width: 50%
+    .guides__bar
+      left: 4%
+      width: 20%
+    .product_overview
+      &__nav
+        .menu-product-container
+          ul
+            padding-left: 148px
+            li
+              a
+                font-size: 12px
 
   // break max-1200
   @media only screen and (max-width: $r-1200)
     .container
       padding: 0 15px
+    .home_top_v3__image img
+      max-width: 100%

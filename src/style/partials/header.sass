@@ -2,10 +2,18 @@
 
 .header
   background-color: white
-  max-width: 1920px
-  padding: 25px 30px
+  max-width: 100%
+  padding: 5px 0
   margin: 0 auto
   z-index: 1
+  border-bottom: 1px solid #e9eaeb
+  &_product
+    position: fixed
+    width: 100%
+    padding: 0
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12)
+    .header_wrap
+      padding: 5px 30px
   &_wrap
     display: flex
     align-items: center
@@ -16,6 +24,10 @@
       a
         &:nth-child(2)
           display: none
+      img
+        width: auto
+        max-height: 36px
+        margin-right: 50px
     &__icon
       display: none
       text-align: right
@@ -39,7 +51,7 @@
         margin-bottom: 0!important
         .highlight
           a
-            color: #537c44
+            color: $color_blue
             text-decoration: underline
         .active
           a
@@ -48,61 +60,74 @@
               transform: rotate(180deg)
         li
           line-height: 16px
+          padding: 25px 0
           a
-            text-transform: uppercase
             color: $color_black
             font-size: 16px
             line-height: 16px
-            font-weight: 500
-            padding: 0 12px
+            font-weight: 400
+            padding: 0 16px
             transition: 0.3s
             &:hover
               transition: 0.3s
-              color: #537c44
+              color: $color_blue
         .current-menu-item
           a
             text-decoration: underline
+          .sub-menu
+            li
+              a
+                text-decoration: none
         .menu-item-has-children
           a
             display: flex
             align-items: center
             position: relative
-            &:before
-              position: absolute
-              content: '\f0d7'
-              font-family: "Font Awesome 5 Free"
-              font-weight: 900
-              right: -2px
-              top: 0
-              transition: 0.3s
+            //&:before
+            //  position: absolute
+            //  content: '\f0d7'
+            //  font-family: "Font Awesome 5 Free"
+            //  font-weight: 900
+            //  color: #283238
+            //  font-size: 12px
+            //  right: 0
+            //  top: 0
+            //  transition: 0.3s
           .sub-menu
-            width: 400px
-            max-width: 100%
+            max-width: 170px
             display: none
             position: absolute
-            top: 30px
+            top: 50px
             flex-direction: column
             border: 1px solid #ebeaeb
             border-radius: 4px
-            padding: 20px 0 10px 20px
+            padding: 5px 20px
             z-index: 2
             background-color: white
             li
-              width: 46%
+              width: 100%
               display: inline-block
-              margin: 0 10px 10px 0
+              padding: 0 0 10px 0
+              &:last-child
+                padding-bottom: 0
               a
                 text-transform: none
-                padding: 7px 5px
+                padding: 7px 0
                 transition: 0.3s
                 border-radius: 4px
                 &:before
                   display: none
-                &:hover
-                  text-decoration: none
-                  transition: 0.3s
-                  background-color: #fafafa
   &_nav
+    a
+      color: $color_black
+      font-size: 16px
+      line-height: 16px
+      font-weight: 400
+      padding: 0 16px
+      transition: 0.3s
+      &:hover
+        transition: 0.3s
+
     &__form
       form
         display: flex
@@ -120,8 +145,9 @@
       input[type='submit']
         text-transform: uppercase
         color: white
-        font-size: 16px
+        font-size: 12px
         font-weight: 500
+        letter-spacing: 1.4px
         width: 195px
         height: 46px
         border: 1px solid $color_black
@@ -131,45 +157,91 @@
           transition: 0.3s
           background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
 
+.header_nav
+  &__form
+    a
+      color: white
+      font-size: 14px
+      font-weight: 500
+
 // Header mobile
 
 .header_mobile
+  width: 0
+  height: 0
+  background-color: white
+  display: none
   position: absolute
-  left: -200%
   top: 0
-  width: 100%
-  max-width: 100%
-  height: 100%
-  background-image: linear-gradient(45deg,#537c44 0,#b0c849 100%)
-  padding: 20px 15px
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75)
-  z-index: 1
-  transition: 0.6s
-  &.slide
-    transition: 0.6s
-    left: 0
-  nav
-    margin-bottom: 30px
-    ul
-      flex-direction: column
-      align-items: flex-start
-      li
-        margin-bottom: 10px
-        a
-          color: white
-          font-size: 22px
-      .menu-item-has-children, .has-child
-        a
-          &:before
-            display: none
+  left: 0
+  padding: 15px 15px 75px 15px
+  z-index: 10
+  &__top
+    display: none
+    align-items: center
+    justify-content: space-between
+    img
+      max-height: 36px
+      width: auto
+    i
+      font-size: 24px
+      color: $color_black
+  .header_nav
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    height: 93%
+    padding-top: 30px
+    nav
+      height: 100%
+      overflow-x: hidden
+      overflow-y: scroll
+      ul
+        flex-direction: column
+        align-items: flex-start
+        li
+          margin-bottom: 25px
+          width: 100%
+          a
+            padding: 10px
+            border-radius: .25rem
+            font-size: 22px
+            font-weight: 300
+            &:hover
+              color: $color_black
         .sub-menu
-          padding: 20px 30px
-          display: block
-          position: initial
-          box-shadow: none
-          li
-            &:last-child
-              margin-bottom: 0
+          background-color: transparent
+          border-radius: 0
+          padding: 0
+        .menu-item-has-children
+          position: relative
+          &.active
+            &:before
+              transform: rotate(90deg)
+            a
+              background-color: #F5F4F5
+            .sub-menu
+              display: block
+              li
+                a
+                  background-color: transparent
+          &:before
+            position: absolute
+            right: 5px
+            top: 11px
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            content: "\f054"
+            z-index: 1
+          .sub-menu
+            position: initial
+            max-width: 100%
+            border: 0
+            padding: 20px 20px 0 20px
+            li
+              padding: 0
+              margin: 0
+
 
 // Header white
 
@@ -188,8 +260,3 @@
           .sub-menu
             a
               color: $color_black
-  .header_mobile
-    ul
-      li
-        a
-          color: $color_black

@@ -1,0 +1,78 @@
+// Email verifier
+
+.email_verifier
+  padding: 60px 0
+  &__text
+    margin-bottom: 50px
+    .title
+      color: #283238
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: .7px
+      margin-bottom: 30px
+  &__form
+    width: 100%
+    background-color: white
+    box-shadow: 0 6px 30px rgba(0,0,0,.25)
+    border-radius: 3px
+    padding: 40px
+    form
+      display: flex
+      margin-bottom: 20px
+      input
+        border: 1px solid #cdcdcd
+        height: 50px
+        border-radius: 3px
+        color: $color_black
+        font-size: 18px
+        font-weight: 300
+        outline: 0
+        &::placeholder
+          color: rgba(0, 0, 0, 0.34)
+          font-size: 18px
+          font-weight: 300
+      input[type="email"]
+        width: 80%
+        border-right: 0
+        border-bottom-right-radius: 0
+        border-top-right-radius: 0
+        padding: 0 15px
+      input[type="submit"]
+        width: 20%
+        border-bottom-left-radius: 0
+        border-top-left-radius: 0
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          background-color: #f7f9f9
+
+.verifier_message
+  display: none
+
+.verifier_error
+  display: none
+  &__invalid
+    margin-bottom: 20px
+    align-items: center
+    i
+      color: red
+    p
+      margin-bottom: 0
+  &__list
+    margin-bottom: 20px
+    justify-content: space-between
+
+.verifier_list
+  &__item
+    display: flex
+    justify-content: space-between
+    padding: 10px 28px
+    border-bottom: 1px solid #e6e6e6
+    background: #fafbfb
+    &:first-child, &:nth-child(2)
+      border-top: 1px solid #e6e6e6
+    p
+      margin-bottom: 0
+      font-size: 14px
+      b
+        font-weight: 400

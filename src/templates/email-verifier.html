@@ -1,0 +1,56 @@
+<!--begin email-->
+<section class="email_verifier">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 center align-center email_verifier__text">
+                <h1 class="title">Email Verifier</h1>
+                <p>Verify the deliverability of any email address with the most complete email checker.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 center">
+                <div class="email_verifier__form">
+                    <form>
+                        <input type="email" placeholder="testemail@test.test">
+                        <input type="submit" value="Verify">
+                    </form>
+                    <p>Enter an email address to verify its accuracy.</p>
+                    <div class="verifier_error">
+                        <div class="row verifier_error__invalid">
+                            <div class="col-lg-1 align-center">
+                                <i class="far fa-times-circle"></i>
+                            </div>
+                            <div class="col-lg-11">
+                                <h3 class="title">Invalid email address</h3>
+                                <p>This email address isn't used to receive emails.</p>
+                            </div>
+                        </div>
+                        <div class="row verifier_error__list verifier_list">
+                            <div class="col-lg-6 verifier_list__item">
+                                <p><b>Format</b></p>
+                                <p class="color_orange">GIBBERISH</p>
+                            </div>
+                            <div class="col-lg-6 verifier_list__item">
+                                <p><b>Type</b></p>
+                                <p class="color_green">PROFESSIONAL</p>
+                            </div>
+                            <div class="col-lg-6 verifier_list__item">
+                                <p><b>Server status</b></p>
+                                <p class="color_red">INVALID</p>
+                            </div>
+                            <div class="col-lg-6 verifier_list__item">
+                                <p><b>Email status</b></p>
+                                <p class="color_red">INVALID</p>
+                            </div>
+                        </div>
+                        <p>We couldn't find this email address publicly available on the web.</p>
+                    </div>
+                    <div class="verifier_message">
+                        <p>This is a webmail email address. This domain name is used to create personal email addresses so we don't verify email addresses on this domain.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end verifier text-->

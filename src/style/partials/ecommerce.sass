@@ -1,0 +1,206 @@
+// Ecommerce header
+
+.ecommerce_header
+  padding: 60px 0 0
+  &__title
+    .title
+      color: $color_black
+      font-size: 50px
+      font-weight: 600
+      letter-spacing: .7px
+  &__comment
+    max-width: 1920px
+    margin: 70px auto
+    background-size: cover
+    background-position: center
+    min-height: 435px
+    position: relative
+    .container
+      position: initial
+    div[class*=col-]
+      position: initial
+    .comment
+      display: flex
+      align-items: center
+      border-radius: 32px
+      position: absolute
+      max-width: 100%
+      left: 0
+      bottom: 85px
+      z-index: 1
+      p
+        max-width: 528px
+        color: white
+        font-size: 21px
+        font-weight: 300
+        line-height: 25px
+        margin: 0 0 0 120px
+        padding: 0 90px 0 15px
+        border-left: 4px solid white
+      &:before
+        position: absolute
+        content: ''
+        width: 640px
+        height: 155px
+        background-image: url("../img/bg_comment.png")
+        background-size: contain
+        background-repeat: no-repeat
+        z-index: -1
+
+// Ecommerce download
+
+.ecommerce_download
+  padding: 70px 0
+  .title__secondary
+    color: #ff5733
+  &__wrapper
+    background: #f3f1f1
+    border-radius: 32px
+    padding: 70px 15px
+    .title__secondary
+      margin-bottom: 20px
+    form
+      max-width: 490px
+      margin: 0 auto
+      .ajax-loader
+        display: none
+      label
+        width: 100%
+        color: $color_black
+        font-size: 20px
+        font-weight: 600
+        line-height: 1.25
+        margin-bottom: 30px
+        input, select
+          margin-top: 15px
+          width: 100%
+          height: 46px
+          border: 1px solid $color_black
+          background-color: white
+          font-size: 16px
+          font-weight: 300
+          padding-left: 15px
+          color: $color_black
+          appearance: none
+          &::placeholder
+            font-size: 16px
+            font-weight: 300
+            color: $color_black
+          &:focus
+            border: 1px solid $color_blue
+            outline: none
+
+// Ecommerce conversations
+
+.ecommerce_conversations
+  padding: 70px 0
+  background-image: linear-gradient(to top, #ffffff 0%, #fcfcfc 7%, #f0f0f0 54%, #ececec 100%, #ececec 100%)
+  &__list
+    margin-top: 50px
+
+.conversations_list
+  div[class*=col-]
+    margin-bottom: 35px
+  &__item
+    height: 100%
+    margin: 0 auto
+    border: 1px solid #f3f3f3
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+    background-color: white
+    padding: 25px 15px 15px 25px
+    position: relative
+    p
+      max-width: 60%
+      min-height: 71px
+      margin-right: 15px
+      color: $color_black
+      font-size: 16px
+      font-weight: 300
+      text-align: left
+    a
+      width: 90px
+      height: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: white
+      font-size: 10px
+      text-transform: uppercase
+      letter-spacing: 0.93px
+      border-radius: 5px
+      &:hover
+        text-decoration: none
+        color: white
+    img
+      position: absolute
+      left: -10px
+      bottom: 10px
+      width: 70px
+    span
+      display: block
+      border-radius: 12px
+      color: $color_black
+      padding: 9px
+      margin-top: 30px
+      margin-left: 50px
+      font-size: 14px
+      text-align: left
+
+// Ecommerce personalize
+
+.ecomemrce_personalize
+  padding: 70px 0
+  &__list
+    margin-top: 50px
+
+.personalize_list
+  div[class*=col-]
+    margin-bottom: 35px
+  &__item
+    .title
+      color: $color_black
+      font-size: 24px
+      font-weight: 600
+      margin-bottom: 15px
+    img
+      padding: 15px
+      max-width: 370px
+      margin: 0 auto
+
+// Ecommerce review
+
+.ecommerce_review
+  background-color: white
+  .testimonial_item
+    border: 1px solid #f3f3f3
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+
+// Ecommerce integrations
+
+.ecommerce_integrations
+  padding: 70px 0
+  &__wrapper
+    margin-top: 50px
+  div[class*=col-]
+    margin-bottom: 35px
+  .item
+    text-align: center
+    img
+      height: 40px
+      margin: 0 auto 15px auto
+    .title
+      color: $color_black
+      font-size: 24px
+      font-weight: 600
+      margin-bottom: 15px
+
+// Ecommerce trial
+
+.ecommerce_trial
+  padding: 70px 0
+  background-color: $color_blue
+  .title__secondary
+    color: white
+    margin-bottom: 35px
+  .btn_dark
+    margin: 0 auto
