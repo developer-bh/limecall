@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="45px" viewBox="0 0 90 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>TechCrunch_logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07.-Customers" transform="translate(-204.000000, -3015.000000)" fill="#332E5E" fill-rule="nonzero">
+            <g id="TechCrunch_logo" transform="translate(204.000000, 3015.000000)">
+                <polygon id="Path" points="45 0 45 15 30 15 30 45 15 45 15 15 0 15 0 0"></polygon>
+                <rect id="Rectangle" x="60" y="0" width="30" height="15"></rect>
+                <polygon id="Path" points="90 30 90 45 45 45 45 15 60 15 60 30"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

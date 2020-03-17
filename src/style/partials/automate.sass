@@ -1,0 +1,172 @@
+// Automate hero
+
+.automate-hero
+  padding: 60px 0
+  .row
+    align-items: center
+  h5
+    margin-bottom: 30px
+    color: $color_blue
+    font-weight: 400
+    letter-spacing: 5px
+    text-transform: uppercase
+  .title__secondary
+    margin-bottom: 30px
+  img
+    @media only screen and (max-width: $r-768)
+      margin-top: 30px
+
+// Automate logos
+
+.automate-logos
+  padding: 70px 0
+  background-color: $color_blue
+  &.bg-white
+    background-color: white
+  .item
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    @media only screen and (max-width: $r-992)
+      margin-bottom: 30px
+
+// Automate how
+
+.automate-how
+  padding: 70px 0
+  p
+    max-width: 900px
+    margin: 0 auto
+
+// Automate steps
+
+.automate-steps
+  padding: 0 0 70px 0
+  div[class*="col-"]
+    @media only screen and (max-width: $r-992)
+      margin-bottom: 30px
+      &:last-of-type
+        margin-bottom: 0
+  .item
+    .number
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 30px
+      span
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $color_blue
+        border-radius: 50%
+        width: 45px
+        height: 45px
+        color: white
+        font-weight: 600
+    h3
+      font-size: 18px
+      font-weight: 600
+      margin-bottom: 5px
+
+// Automate text
+
+.automate-text
+  padding: 70px 0
+  &:nth-of-type(odd)
+    background-color: #f6fbff
+  &:nth-of-type(even)
+    .image
+      order: 2
+      @media only screen and (max-width: $r-768)
+        order: 1
+    .text
+      order: 1
+      @media only screen and (max-width: $r-768)
+        order: 2
+  .row
+    align-items: center
+  img
+    width: 100%
+    max-width: 400px
+    @media only screen and (max-width: $r-768)
+      margin-bottom: 30px
+  .title__secondary
+    margin-bottom: 30px
+    position: relative
+    z-index: 1
+    span
+      color: white
+      position: relative
+      z-index: -1
+      &:before
+        content: ""
+        height: 105%
+        width: 110%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: $color_blue
+        z-index: -1
+
+// Automate cta
+
+.automate-cta
+  padding: 70px 0
+  background-color: #1c1c51
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    width: 21%
+    height: 103%
+    top: 0
+    left: 0
+    background-color: $color_blue
+    clip-path: ellipse(36% 40% at 0% 0%)
+  &:after
+    position: absolute
+    content: ''
+    width: 11%
+    height: 60%
+    bottom: 0
+    right: 0
+    background-color: $color_blue
+    clip-path: ellipse(36% 40% at 100% 100%)
+  .row
+    align-items: center
+  .title__secondary
+    color: white
+    @media only screen and (max-width: $r-768)
+      text-align: center
+      margin-bottom: 30px
+  .btn_blue
+    margin: 0 auto
+
+// Automate case
+
+.automate-case
+  padding: 70px 0
+  background-size: contain
+  background-position: right
+  background-repeat: no-repeat
+  background-color: #f6fbff
+  @media only screen and (max-width: $r-992)
+    background-size: 45%
+  @media only screen and (max-width: $r-768)
+    background-image: none!important
+  .row
+    align-items: center
+  h5
+    margin-bottom: 30px
+    color: $color_blue
+    font-weight: 400
+    letter-spacing: 5px
+    text-transform: uppercase
+  .title__secondary
+    margin-bottom: 30px
+  img
+    @media only screen and (max-width: $r-768)
+      margin-top: 30px
+
