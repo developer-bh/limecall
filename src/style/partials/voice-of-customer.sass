@@ -1,0 +1,90 @@
+.voc
+  &-hero
+    padding-top: 100px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+    min-height: 400px
+    text-align: center
+    color: white
+    line-height: 1.5
+    h1
+      font-weight: 600
+      font-size: 40px
+    p
+      color: white
+  &-content
+    background-color: $color_blue
+    display: block
+    padding: 70px 0
+    color: white
+    .text
+      max-width: 900px
+      margin: 0 auto
+      h4
+        text-transform: uppercase
+        font-weight: 300
+        letter-spacing: 5px
+        margin-bottom: 40px
+      h5
+        color: white
+        font-size: 30px
+        margin-bottom: 40px
+      p
+        color: white
+  &-research
+    display: block
+    padding: 70px 0
+    .image
+      display: flex
+      justify-content: flex-end
+      height: 400px
+      @media only screen and (max-width: $r-992)
+        justify-content: flex-start
+      img
+        max-height: 100%
+    .text
+      h4
+        text-transform: uppercase
+        color: $color_blue
+        font-weight: 300
+        letter-spacing: 5px
+        margin-bottom: 40px
+      ul
+        padding: 0
+        margin: 40px 0
+        li
+          display: flex
+          align-items: center
+          position: relative
+          padding-left: 20px
+          margin-bottom: 15px
+          &:before
+            position: absolute
+            content: ''
+            background-image: url("../img/icon_benef_true.png")
+            background-size: cover
+            background-repeat: no-repeat
+            width: 11px
+            height: 8px
+            left: 0
+  &-solution
+    padding: 70px 0
+    background-color: #f4f4f4
+    .text
+      max-width: 900px
+      margin: 0 auto
+      padding-bottom: 40px
+      h4
+        text-transform: uppercase
+        color: $color_blue
+        font-weight: 300
+        letter-spacing: 5px
+        margin-bottom: 40px
+    .item
+      
+      img
+        height: 60px
+
+
+

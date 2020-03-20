@@ -43,7 +43,7 @@
   &__image
     padding: 60px 80px
     min-height: 100vh
-    background-color: $color_blue
+    background-image: linear-gradient(45deg,#1765bc 0,#4db6f7 100%)
     img
       padding-top: 190px
       max-width: 100%
@@ -56,16 +56,18 @@
     margin-bottom: 50px
   nav
     margin-bottom: 50px
-    .nav-tabs
+    .nav-tabs, .nav-pills
       justify-content: center
       border-bottom: 0
-      .nav-item
+      .nav-item, .nav-link
         border: 0
         color: $color_black
         font-size: 20px
+        border-radius: 0
         &.active
           color: $color_black
           border-bottom: 3px solid $color_blue
+          background-color: transparent
   &__item
     text-align: center
     margin-bottom: 35px
