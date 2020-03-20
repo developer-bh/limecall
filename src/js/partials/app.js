@@ -1,5 +1,13 @@
 $( document ).ready(function() {
 
+    // Navigation
+
+    $(".navigation .item").mouseenter(function() {
+        $(this).addClass('open');
+    }).mouseleave(function() {
+        $(this).removeClass('open');
+    });
+
     // Tooltip
 
     $(function () {

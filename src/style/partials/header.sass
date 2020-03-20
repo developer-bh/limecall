@@ -260,3 +260,106 @@
           .sub-menu
             a
               color: $color_black
+
+// Navigation
+
+.navigation
+  @media only screen and (max-width: $r-992)
+    display: none
+  ul
+    display: flex
+    align-items: center
+    padding: 0
+    margin: 0
+    li
+      display: inline-block
+      margin-right: .5rem
+      vertical-align: middle
+      text-align: left
+      border-bottom: 0
+      a
+        display: block
+        transition: color .4s steps(60)
+        font-size: 14px
+        font-weight: 400
+        color: $color_black
+        padding: 8px
+      .sub.sub-two
+        ul
+          &:first-of-type
+            border-right: 1px solid #cfcfcf
+      &.open
+        .sub
+          top: 50px
+          opacity: 1
+          visibility: visible
+      .sub
+        opacity: 0
+        visibility: hidden
+        width: 550px
+        transition: top .3s ease-out,opacity .3s ease-out,visibility .3s ease-out
+        box-shadow: 0 2px 11px -5px rgba(0,0,0,.36)
+        overflow: visible
+        background-color: #fbfeff
+        position: absolute
+        border-radius: .188rem
+        display: inline-block
+        z-index: 11
+        padding: 30px
+        top: 100px
+        font-size: 14px
+        &:before
+          content: ""
+          position: absolute
+          left: 40px
+          top: -8px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 0 13px 12px
+          border-color: transparent transparent #fbfeff
+          z-index: -1
+        ul
+          display: inline-block
+          vertical-align: top
+          width: 240px
+          padding-left: 20px
+          h3
+            min-height: 8px
+            letter-spacing: 2px
+            font-weight: 400
+            font-size: 12px
+            color: #979797
+            line-height: 8px
+            text-transform: uppercase
+          li
+            min-height: 48px
+            display: block
+            margin: 0
+            border-radius: 0
+            border-top: 0
+            border-bottom: 0
+            color: #6b6b6b
+            text-transform: none
+            a
+              display: flex
+              flex-wrap: wrap
+              align-items: baseline
+              border-radius: 0
+              color: #808080
+              padding: 1rem 1rem 0 3rem
+              &:hover
+                color: $color_black
+                text-decoration: none
+              img
+                height: 30px
+                width: 30px
+                margin-left: -48px
+                position: absolute
+              span
+                width: 100%
+                display: block
+                font-size: 12px
+                color: #979797
+                line-height: 11px
+                font-weight: 300
