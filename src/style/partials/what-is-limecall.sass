@@ -1,0 +1,115 @@
+// Wil hero
+
+.wil-hero
+  padding: 60px 0
+  background-color: #f6fbff
+  .wrapper
+    margin: 0 auto
+    max-width: 700px
+  .title__secondary
+    margin-bottom: 30px
+  p
+    margin-bottom: 50px
+
+// Wil tabs
+
+.wil-tabs
+  padding: 70px 0
+  .row
+    align-items: center
+  .title__secondary
+    margin-bottom: 30px
+  p
+    margin-bottom: 50px
+  .nav-tabs
+    border-bottom: 0
+    margin-bottom: 30px
+    .nav-item
+      padding: 15px
+      margin-bottom: 0
+      border-radius: 10px
+      border: 0
+      h3
+        display: flex
+        align-items: center
+        font-size: 18px
+        font-weight: 600
+        margin-bottom: 5px
+        color: $color_black
+        img
+          margin-right: 15px
+          height: 40px
+      p
+        margin-bottom: 0
+      &.active
+        border: 0
+        background-color: #f6fbff
+  .nav-icons
+    .nav-item
+      p
+        padding-left: 45px
+  .tab-content
+    @media only screen and (max-width: $r-768)
+      margin-top: 30px
+  .order
+    @media only screen and (max-width: $r-768)
+      &:first-of-type
+        order: 2
+      &:nth-of-type(2)
+        order: 1
+
+
+// Wil testimonial
+
+.wil-testimonial
+  padding: 70px 0
+  .row
+    align-items: center
+  p
+    color: $color_black
+    font-size: 36px
+    line-height: 1.7
+    text-indent: -16px
+    margin-bottom: 30px
+    @media only screen and (max-width: $r-768)
+      text-indent: 0
+      font-size: 24px
+      line-height: 1.5
+  h4
+    font-size: 18px
+    font-weight: 300
+    color: $color_black
+    margin-bottom: 15px
+    b, strong
+      font-weight: 600
+  .logo
+    @media only screen and (max-width: $r-768)
+      margin-bottom: 30px
+    img
+      max-height: 20px
+
+// Wil explore
+
+.wil-explore
+  padding: 70px 0
+  .title__secondary
+    max-width: 700px
+    margin: 0 auto 50px auto
+  div[class*="col-"]
+    @media only screen and (max-width: $r-992)
+      margin-bottom: 30px
+  .item
+    padding: 30px
+    background-color: #f6fbff
+    border-radius: 10px
+    img
+      max-height: 50px
+      margin-bottom: 15px
+    h3
+      font-size: 18px
+      font-weight: 600
+      color: $color_black
+      margin-bottom: 15px
+    p
+      margin-bottom: 15px
+
