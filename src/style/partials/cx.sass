@@ -15,9 +15,12 @@
     p
       color: white
   &-features
-    background: $color_blue
+    background-image: linear-gradient(45deg,#1765bc 0,#4db6f7 100%)
     display: block
     padding: 70px 0
+    div[class*="col-"]
+      @media only screen and (max-width: $r-768)
+        margin-bottom: 30px
     .item
       display: flex
       justify-content: center
@@ -26,13 +29,15 @@
       text-align: center
       .image
         height: 60px
+        margin-bottom: 15px
         img
           max-height: 100%
       .text
         color: white
         h3
           font-size: 18px
-          padding: 20px 0
+          font-weight: 600
+          margin-bottom: 15px
         p
           color: white
   &-content
@@ -41,11 +46,12 @@
     .text
       max-width: 900px
       margin: 0 auto
-      h4
-        text-transform: uppercase
+      h5
+        margin-bottom: 30px
         color: $color_blue
-        font-weight: 300
+        font-weight: 400
         letter-spacing: 5px
+        text-transform: uppercase
       h2
         margin-bottom: 30px
   &-list
@@ -59,53 +65,55 @@
       background-image: none !important
     ul
       li
-        margin: 30px 0
-        h3
-          padding: 20px 0
+        margin-bottom: 50px
+        h2
+          margin-bottom: 30px
           font-weight: 600
   &-webinar
     padding: 70px 0
     .image
       display: flex
       justify-content: flex-end
-      height: 500px
-      @media only screen and (max-width: $r-992)
+      @media only screen and (max-width: $r-768)
         justify-content: flex-start
+        margin-bottom: 30px
       img
-        max-height: 100%
+        max-height: 500px
+        @media only screen and (max-width: $r-768)
+          max-height: initial
     .text
-      h4
-        padding-top: 20px
-        text-transform: uppercase
+      h5
+        margin-bottom: 30px
         color: $color_blue
-        font-weight: 300
+        font-weight: 400
         letter-spacing: 5px
+        text-transform: uppercase
       h3
         margin-bottom: 30px
         font-weight: 600
       p
-        margin-bottom: 80px
+        margin-bottom: 30px
+
   &-review
-    background: $color_blue
+    background-image: linear-gradient(45deg,#1765bc 0,#4db6f7 100%)
     padding: 70px 0
     color: white
     text-align: center
     letter-spacing: 1px
     .image
       height: 60px
+      margin-bottom: 30px
       img
         max-height: 100%
     .text
-      padding: 20px 0
       h5
         margin-bottom: 20px
       p
-        margin-bottom: 40px
+        margin-bottom: 30px
         color: white
       a
         position: relative
         margin: 0 auto
-        color: white
-        border: 1px solid white
+
 
 

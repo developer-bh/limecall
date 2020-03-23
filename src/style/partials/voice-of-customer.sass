@@ -14,22 +14,24 @@
     p
       color: white
   &-content
-    background-color: $color_blue
+    background-image: linear-gradient(45deg,#1765bc 0,#4db6f7 100%)
     display: block
     padding: 70px 0
     color: white
     .text
       max-width: 900px
       margin: 0 auto
-      h4
-        text-transform: uppercase
-        font-weight: 300
-        letter-spacing: 5px
-        margin-bottom: 40px
       h5
+        margin-bottom: 30px
+        font-weight: 400
+        letter-spacing: 5px
+        text-transform: uppercase
+      h4
         color: white
         font-size: 30px
-        margin-bottom: 40px
+        margin-bottom: 30px
+        @media only screen and (max-width: $r-768)
+          font-size: 24px
       p
         color: white
   &-research
@@ -38,21 +40,23 @@
     .image
       display: flex
       justify-content: flex-end
-      height: 400px
+      margin-bottom: 30px
       @media only screen and (max-width: $r-992)
         justify-content: flex-start
       img
-        max-height: 100%
+        max-height: 400px
+        @media only screen and (max-width: $r-768)
+          max-height: initial
     .text
-      h4
-        text-transform: uppercase
+      h5
         color: $color_blue
-        font-weight: 300
+        margin-bottom: 30px
+        font-weight: 400
         letter-spacing: 5px
-        margin-bottom: 40px
+        text-transform: uppercase
       ul
         padding: 0
-        margin: 40px 0
+        margin: 30px 0
         li
           display: flex
           align-items: center
@@ -72,16 +76,19 @@
     padding: 70px 0
     text-align: center
     background-color: #f4f4f4
+    .wrapper
+      div[class*="col-"]
+        @media only screen and (max-width: $r-768)
+          margin-bottom: 30px
     .text
-      padding-bottom: 40px
       max-width: 900px
-      margin: 0 auto
-      h4
-        text-transform: uppercase
+      margin: 0 auto 30px
+      h5
         color: $color_blue
-        font-weight: 300
+        margin-bottom: 30px
+        font-weight: 400
         letter-spacing: 5px
-        margin-bottom: 40px
+        text-transform: uppercase
     .item
       text-align: center
       img
@@ -89,7 +96,7 @@
         margin-bottom: 20px
   &-demo
     padding: 70px 0
-    background-color: $color_blue
+    background-image: linear-gradient(45deg,#1765bc 0,#4db6f7 100%)
     .text
       max-width: 900px
       margin: 0 auto
@@ -99,28 +106,28 @@
       text-align: center
       h2
         color: white
-        margin-bottom: 40px
+        margin-bottom: 30px
   &-program
     padding: 70px 0
     text-align: center
     .text
-      padding-bottom: 40px
+      padding-bottom: 30px
       max-width: 900px
       margin: 0 auto
-      h4
-        text-transform: uppercase
+      h5
         color: $color_blue
-        font-weight: 300
+        margin-bottom: 30px
+        font-weight: 400
         letter-spacing: 5px
-        margin-bottom: 40px
+        text-transform: uppercase
   &-method
     background-color: #f4f4f4
     padding: 70px 0
     ul
       li
-        margin: 30px 0
+        margin-bottom: 50px
         h3
-          padding: 20px 0
+          margin-bottom: 30px
           font-weight: 600
   &-customer
     display: block
@@ -128,34 +135,37 @@
     .text
       max-width: 900px
       margin: 0 auto
-      h4
-        text-transform: uppercase
-        color: $color_blue
-        font-weight: 300
-        letter-spacing: 5px
-        margin-bottom: 40px
       h5
+        color: $color_blue
+        margin-bottom: 30px
+        font-weight: 400
+        letter-spacing: 5px
+        text-transform: uppercase
+      h4
         font-size: 30px
-        margin-bottom: 40px
+        margin-bottom: 30px
+        @media only screen and (max-width: $r-768)
+          font-size: 24px
   &-more
     display: block
     padding: 70px 0
     background-color: #f4f4f4
+    div[class*="col-"]
+      @media only screen and (max-width: $r-768)
+        margin-bottom: 30px
     h2
-      margin-bottom: 40px
+      margin-bottom: 50px
     .item
       background-color: #fff
       border-radius: 8px
-      height: 100%
       img
         border-top-right-radius: 8px
         border-top-left-radius: 8px
       .text
-        padding: 50px
+        padding: 30px
         h6
           font-size: 18px
           font-weight: 600
           margin-bottom: 5px
         p
-          margin-bottom: 40px
-
+          margin-bottom: 30px
