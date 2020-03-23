@@ -1,0 +1,274 @@
+// Covid hero
+
+.covid-hero
+  display: flex
+  align-items: center
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  min-height: 670px
+  @media only screen and (max-width: $r-768)
+    min-height: 100vh
+  h1
+    height: 90px
+    display: inline-flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    box-shadow: -5px 5px 3px rgba(0, 0, 0, 0.30)
+    background-color: rgba(40, 50, 56, 0.5)
+    border: 3px solid white
+    color: white
+    font-size: 54px
+    font-weight: 300
+    letter-spacing: 0.54px
+    line-height: 61.32px
+    padding: 0 55px
+    @media only screen and (max-width: $r-768)
+      height: auto
+      padding: 15px
+
+    b
+      color: #f95e3a
+      font-weight: 400
+      margin: 0 8px
+
+// Covid text
+
+.covid-text
+  padding: 70px 0
+  img
+    height: 65px
+    margin-bottom: 25px
+  h2
+    font-size: 33px
+    font-weight: 600
+    margin-bottom: 50px
+    @media only screen and (max-width: $r-768)
+      margin-bottom: 30px
+  p
+    font-size: 27px
+    font-weight: 300
+    @media only screen and (max-width: $r-768)
+      font-size: 18px
+  .links
+    display: flex
+    justify-content: center
+    margin-top: 60px
+    @media only screen and (max-width: $r-768)
+      flex-wrap: wrap
+      margin-top: 30px
+    a
+      margin: 0 8px 15px 8px
+    .btn_white
+      border: 1px solid $color_black
+
+// Covid steps
+
+.covid-steps
+  padding: 70px 0
+  background-color: $color_blue
+  .list
+    .title__secondary
+      color: white
+      margin-bottom: 30px
+      span
+        color: $color_black
+    ul
+      padding: 0
+      margin: 0
+      @media only screen and (max-width: $r-768)
+        margin-bottom: 30px
+      li
+        display: flex
+        align-items: center
+        color: white
+        font-size: 23px
+        font-weight: 600
+        margin-bottom: 20px
+        padding-left: 45px
+        position: relative
+        @media only screen and (max-width: $r-768)
+          font-size: 18px
+          margin-bottom: 15px
+        &:before
+          position: absolute
+          content: ''
+          left: 0
+          width: 13px
+          height: 13px
+          border: 2px solid white
+          border-radius: 50%
+          @media only screen and (max-width: $r-768)
+            width: 10px
+            height: 10px
+  .steps
+    ul
+      padding: 0
+      margin: 0
+      li
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 340px
+        margin: 0 auto 90px auto
+        padding: 25px 15px 20px 15px
+        background-color: rgba(255, 255, 255, 0.08)
+        border: 1px solid white
+        text-align: center
+        position: relative
+        &:last-of-type
+          margin-bottom: 0
+        &:before
+          position: absolute
+          content: ''
+          width: 29px
+          height: 37px
+          background-image: url('../img/icon_steps.svg')
+          background-size: cover
+          background-repeat: no-repeat
+          bottom: -65px
+        &:last-of-type
+          &:before
+            display: none
+        h3
+          text-transform: uppercase
+          color: white
+          font-size: 23px
+          font-weight: 500
+          margin: 0 0 5px 0
+        p
+          color: #013d5b
+          font-size: 23px
+          font-weight: 400
+          letter-spacing: 2.27px
+          margin: 0
+
+// Qualifications
+
+.covid-qualifications
+  padding: 70px 0
+  .title__secondary
+    margin-bottom: 50px
+    @media only screen and (max-width: $r-768)
+      margin-bottom: 30px
+  ul
+    padding: 0
+    margin: 0
+    border: 1px solid $color_black
+    li
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid $color_black
+      @media only screen and (max-width: $r-768)
+        flex-direction: column
+      &:last-of-type
+        border-bottom: 0
+      .item
+        &:first-of-type
+          width: 30%
+          border-right: 1px solid $color_black
+          padding: 45px
+          @media only screen and (max-width: $r-768)
+            width: 100%
+            border-right: 0
+            padding: 15px
+        &:nth-of-type(2)
+          width: 70%
+          padding: 45px
+          @media only screen and (max-width: $r-768)
+            width: 100%
+            padding: 15px
+      h3
+        text-transform: uppercase
+        color: $color_black
+        font-size: 18px
+        font-weight: 600
+        text-align: left
+      p
+        text-align: left
+        &:last-of-type
+          margin-bottom: 0
+        a
+          color: $color_black
+          font-style: italic
+          font-weight: 500
+
+// Covid registration
+
+.covid-registration
+  padding: 70px 0
+  background-color: #f4f4f4
+  .title__secondary
+    margin-bottom: 50px
+    @media only screen and (max-width: $r-768)
+      margin-bottom: 30px
+  form
+    .wpcf7-validation-errors
+      margin: 15px 0 0 0
+      border-color: red
+    .wpcf7-mail-sent-ok
+      margin: 15px 0 0 0
+      border-color: $color_blue
+    p
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    label
+      width: 100%
+      max-width: 47%
+      font-size: 15px
+      font-weight: 400
+      margin-bottom: 22px
+      @media only screen and (max-width: $r-768)
+        max-width: 100%
+      small
+        color: $color_black
+        font-size: 13px
+        display: block
+        width: 100%
+      input, select
+        width: 100%
+        height: 37px
+        border: 1px solid #e2e2e2
+        background-color: white
+        margin-top: 3px
+        outline: none
+        padding-left: 15px
+        appearance: none
+        border-radius: 0
+      select
+        background-image: url("../img/arrow_form_select.png")
+        background-repeat: no-repeat
+        background-position: 100.2%
+      textarea
+        width: 100%
+        height: 105px
+        border: 1px solid #e2e2e2
+        background-color: white
+        margin-top: 3px
+        outline: none
+        padding: 15px
+        appearance: none
+        border-radius: 0
+        resize: none
+      input[type="file"]
+        background-color: transparent
+        border: 0
+        padding: 0
+      &.full
+        max-width: 100%
+    .btn-send
+      width: 100%
+      margin-top: 40px
+      @media only screen and (max-width: $r-768)
+        margin-top: 0
+      .ajax-loader
+        display: none
+      input
+        border: 0
+        border-radius: 0
+        outline: none
+        appearance: none
+
+
