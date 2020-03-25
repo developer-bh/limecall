@@ -1,5 +1,25 @@
 $( document ).ready(function() {
 
+    // Customer success help
+
+    var swiper = new Swiper('.swiper-help', {
+        speed: 1000,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // Customer success testimonials
+
+    var swiper = new Swiper('.swiper-testimonials', {
+        speed: 1000,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     // Navigation
 
     $(".navigation .item").mouseenter(function() {
