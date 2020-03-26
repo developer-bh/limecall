@@ -1,0 +1,88 @@
+.security
+  &-hero
+    padding: 70px 0
+    text-align: center
+    h1
+      font-size: 50px
+  &-items
+    background-color: #f6fbff
+    padding: 70px 0
+    text-align: center
+    h2
+      margin-bottom: 30px
+    .list
+      div[class*="col-"]
+        @media only screen and (max-width: $r-768)
+          margin-bottom: 30px
+    .item
+      .icon
+        height: 60px
+        margin-bottom: 15px
+        img
+          height: 100%
+      .text
+        h3
+          font-weight: 600
+          margin-bottom: 15px
+  &-features
+    background-color: #f6fbff
+    padding: 70px 0
+    text-align: center
+    h2
+      margin-bottom: 30px
+    .list
+      div[class*="col-"]
+        @media only screen and (max-width: $r-768)
+          margin-bottom: 30px
+    .item
+      .icon
+        height: 60px
+        margin-bottom: 15px
+        img
+          height: 100%
+      .text
+        margin-bottom: 30px
+        h3
+          font-weight: 600
+          margin-bottom: 15px
+        a
+          color: $color_black
+          .arrow
+            color: $color_black
+            font-size: 14px
+            text-decoration: none
+            position: relative
+            left: 3px
+            transition: 0.3s
+          &:hover
+            .arrow
+              transition: 0.3s
+              color: $color_black
+              text-decoration: none
+              left: 8px
+    .link
+      a
+        color: $color_black
+        text-decoration: none
+        border-bottom: 1px dotted
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          border-bottom: 1px solid
+  &-info
+    padding: 70px 0
+    .text
+      margin-bottom: 50px
+      h2,
+      h3
+        font-weight: 600
+        margin-bottom: 30px
+      a
+        color: $color_black
+        text-decoration: none
+        border-bottom: 1px dotted
+        transition: 0.3s
+        &:hover
+          transition: 0.3s
+          border-bottom: 1px solid
+
