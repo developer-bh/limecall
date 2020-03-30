@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+    // Free tools active url
+
+    $(function() {
+        $('.free-tools-all a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+    });
+
     // Testimonials slider
 
     var galleryTop = new Swiper('.gallery-top', {
