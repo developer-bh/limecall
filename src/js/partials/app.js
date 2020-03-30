@@ -1,5 +1,31 @@
 $( document ).ready(function() {
 
+    // Testimonials slider
+
+    var galleryTop = new Swiper('.gallery-top', {
+        speed: 800,
+        spaceBetween: 10,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        loopedSlides: 6
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        speed: 800,
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 6
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
     // Customer success help
 
     var swiper = new Swiper('.swiper-help', {
